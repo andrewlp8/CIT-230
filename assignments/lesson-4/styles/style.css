@@ -19,9 +19,12 @@ header>img {
 }
 
 .headerText h1 {
+    font-family: Dosis;
     font-size: 3rem;
+    text-shadow: 3px 3px 2px rgba(7, 27, 41, .7);
 }
 .subheading {
+    font-family: Lato;
     font-size: 1.1rem;
     color: #FFF;
     font-style: italic;
@@ -33,7 +36,7 @@ header>img {
     vertical-align: middle;
     color: #FFF;
     background-color: #45abf0;
-    box-shadow: 4px 6px 19px 13px rgba(108,126,148,1);
+    box-shadow: 4px 3px 6px 6px rgba(7, 27, 41, .7);
     font-size: 1.1rem;
 }
 .currentWeather img {
