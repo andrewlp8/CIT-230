@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Fredoka+One|Lato|Roboto');
+
+
+header {
+    background-color: #0067c5;
+    text-align: center;
+    padding: .5rem;
+    color: #FFF;
+}
+
+header>img {
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+}
+.headerText {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.headerText h1 {
+    font-size: 3rem;
+}
+.subheading {
+    font-size: 1.1rem;
+    color: #FFF;
+    font-style: italic;
+}
+.currentWeather {
+    display: inline-block;
+    margin: 1rem 0 1rem 5rem;
+    padding: 1.2rem;
+    vertical-align: middle;
+    color: #FFF;
+    background-color: #45abf0;
+    box-shadow: 4px 6px 19px 13px rgba(108,126,148,1);
+    font-size: 1.1rem;
+}
+.currentWeather img {
+    width: 50px;
+    vertical-align: middle;
+}
+.currentWeather p {
+    display: inline-block;
+    vertical-align: top;
+}
