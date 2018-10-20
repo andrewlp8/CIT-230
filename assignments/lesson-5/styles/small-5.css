@@ -72,9 +72,6 @@ nav li a {
 /* back image section */
 #backgroundImage {
     width: 100%;
-    height: 25em;
-    max-width: 100%;
-    vertical-align: top;
     background-repeat: no-repeat;
-    background-image: url("https://raw.githubusercontent.com/andrewlp8/andrewlp8.github.io/master/assignments/lesson-5/images/prestonHeader.png?token=ApY9RH5bjSL5VXdGXmJ0SMjNyNJdqkFSks5b1O-kwA%3D%3D");
+    background-image: url("https://raw.githubusercontent.com/andrewlp8/andrewlp8.github.io/master/assignments/lesson-5/images/prestonHeader.png?token=ApY9RECeHfnqhv8gTdsiXVRiNtqLQrbuks5b1PHswA%3D%3D");
 }
