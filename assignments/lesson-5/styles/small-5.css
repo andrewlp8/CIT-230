@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Fredoka+One|Lato|Roboto');
+
+/* Header */
+header {
+    background-color: #0067c5;
+    text-align: center;
+    padding: .5rem;
+    color: #FFF;
+}
+
+header>img {
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+}
+.headerText {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.headerText h1 {
+    font-family: Dosis;
+    font-size: 3rem;
+    text-shadow: 3px 3px 2px rgba(7, 27, 41, .7);
+}
+.subheading {
+    font-family: Lato;
+    font-size: 1.1rem;
+    color: #FFF;
+    font-style: italic;
+}
+.currentWeather {
+    display: inline-block;
+    margin: 1rem 0 1rem 5rem;
+    padding: 1.2rem;
+    vertical-align: middle;
+    color: #FFF;
+    background-color: #45abf0;
+    box-shadow: 4px 3px 6px 6px rgba(7, 27, 41, .7);
+    font-size: 1.1rem;
+}
+.currentWeather img {
+    width: 50px;
+    vertical-align: middle;
+}
+.currentWeather p {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Navigation Menu */
+
+nav li {
+    float: left;
+    max-width: 100%;
+    margin-left: 20px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #45abf0;
+}
+nav li a {
+    display: block;
+    color: #FFF;
+    padding: 14px 16px;
+    text-decoration: none;    
+}
+
+/* back image section */
+#backgroundImage {
+    background-image: url("C:\Users\softe\Documents\BYU-I\CIT-230 Frontend\andrewlp8.github.io\assignments\lesson-5\images\prestonHeader.png");
+}
