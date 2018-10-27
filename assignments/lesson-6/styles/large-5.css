@@ -12,7 +12,7 @@
     nav ul.hide {
         display: block;
     }
-    #map {
+    #map iframe {
         width: 400px;
         height: 300px;
     }

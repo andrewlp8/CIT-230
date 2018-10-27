@@ -22,7 +22,7 @@
         margin-bottom: 2em;
     }
 
-    #map {
+    #map iframe {
         width: 200px;
         height: 150px;
     }
@@ -45,11 +45,13 @@ background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /
 background: linear-gradient(to bottom, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFF;
 }
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    
 }
 
 nav ul li a {
@@ -60,13 +62,24 @@ nav ul li a {
 }
 nav ul li.active a {
     background-color: rgba(24,63,88,0.2);
-    color: #FFF;
+    color: #eee;
 }
 
 nav ul.hide {
     display: none;
 }
 
+nav li a {
+    color: #FFF;
+}
+nav li a:hover {
+    background-color: rgba(24,63,88,0.4);
+    color: #eee
+}
+nav li a:active {
+    background-color: rgba(24,63,88,0.9);
+    color: #FFF;
+}
 .clearfix:after {
     content: "";
     display: table;
