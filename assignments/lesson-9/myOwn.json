@@ -1,0 +1,48 @@
+{
+    "title" : "My Family",
+    "homeTown" : "Boulder City",
+    "formed" : 2012,
+    "active" : true,
+    "members" : [
+      {
+        "name" : "Andrew",
+        "age" : 29,
+        "aka" : "Dad",
+        "jobs" : [
+          "Protector",
+          "Provider",
+          "Enviromental Control"
+        ]
+      },
+      {
+        "name" : "Jade",
+        "age" : 30,
+        "aka" : "Mom",
+        "jobs" : [
+          "Nurturer",
+          "Enlightener",
+          "Caregiver"
+        ]
+      },
+      {
+        "name" : "Cashton",
+        "age" : 5,
+        "aka" : "Cash Man",
+        "jobs" : [
+          "Big Brother",
+          "Kindergarten",
+          "Play"
+        ]
+      },
+      {
+        "name" : "Clella",
+        "age" : 4,
+        "aka" : "Clella Lu",
+        "jobs" : [
+          "Little Sister",
+          "Pre School",
+          "Play"
+        ]
+      }
+    ]
+  }

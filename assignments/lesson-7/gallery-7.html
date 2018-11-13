@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Town Template</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles/small.css">
+        <link rel="stylesheet" type="text/css" href="styles/large.css">
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        
+    </head>
+
+    <body>
+
+        <header>
+            <img src="images/logo.png" alt="Weather Site Logo">
+
+            <div class="headerText">
+                <h1>Your Weather First</h1>
+                <div class="subheading">Where Weather Comes First</div>
+            </div>  
+
+            <div id="remove" class="currentWeather">
+                <img src="images/icon.png" alt="Current Weather icon">
+                <p>Cloudy</p>
+            </div>
+        </header>
+
+        <nav class="clearfix">
+
+            <button onclick="toggleMenu()">&#9776; Menu</button> 
+
+            <ul id="primaryNav" class="hide"> 
+                <li><a href="#">Home</a></li>
+                <li><a href="preston-7.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li class="active"><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+<div id="content">
+    <h1>The Town of Preston</h1>
+
+        <main>
+
+            <div class="header_img">
+                <picture>
+                    <source media="(max-width: 900px)" srcset="images/prestonHeaderSmall.jpg">
+                        <source media="(min-width: 901px)" srcset="images/prestonHeader.jpg">
+                    <img id="backgroundImage"src="images/prestonHeaderSmall.jpg" alt="preston outdoor scenery">
+                </picture>
+                <section id="weatherSumBox">
+                    <div class="weatherDetails">
+                        <h3>Weather Summary</h3><hr>
+
+                        <div class="weatherInfoLine">
+                            <p class="label">Currently:</p>
+                            <p class="value">Sunny</p>
+                        </div>
+                        
+                        <div class="weatherInfoLine">
+                            <p class="label">Temperature:</p>
+                            <p class="value">76 &deg;F</p>
+                        </div>
+
+                        <div class="weatherInfoLine">
+                            <p class="label">Humidity:</p>
+                            <p class="value">69%</p>
+                        </div>
+
+                        <div class="weatherInfoLine">
+                            <p class="label">Precipitation:</p>
+                            <p class="value">0 inches</p>
+                        </div>
+
+                        <div class="weatherInfoLine">
+                            <p class="label">Wind Speed:</p>
+                            <p class="value">5 mph</p>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </main>
+        <section class="forecast, clearfix">
+        <h3>High Temperature Forecast</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>Forecast</th>
+                    <td>89&deg;F</td>
+                    <td>87&deg;F</td>
+                    <td>78&deg;F</td>
+                    <td>75&deg;F</td>
+                    <td>72&deg;F</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="clearfix">
+                <h3>Founders Day Fresco</h3>
+                <p id="author">by Janica Juarez</p>
+                <picture>
+                    <source media="(max-width: 900px)" srcset="images/peopleOutdoorsSmall.jpg">
+                        <source media="(min-width: 901px)" srcset="images/peopleOutdoors.jpg">
+                    <img id="foundersDayImg"src="images/peopleOutdoorsSmall.jpg" alt="preston outdoor scenery">
+                </picture>
+       
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a href="#">click here to continue reading</a></p>
+             </section>
+
+        <div id="preFooter">
+                <picture>
+                        <source media="(max-width: 900px)" srcset="images/peopleFooterSmall.jpg">
+                            <source media="(min-width: 901px)" srcset="images/peopleFooter.jpg">
+                        <img id="couplesImg"src="images/peopleFooterSmall.jpg" alt="preston outdoor scenery">
+                    </picture>
+
+            <div id="prefootMid">
+                <h4>Your Weather First</h4>
+                <address>
+                        <img src="images/icons/location.png" alt="location icon">30 N 1st E <br>
+                    Preston, ID 83263
+                </address><br>
+              
+                <img src="images/icons/phone.png" alt="phone icon"><a href="tel:999-999-9999">999.999.9999</a><br>
+                <img src="images/icons/mail.png" alt="mail icon"><a href="mailto:theweathersite@tws.com">theweathersite@tws.com</a>
+                <br>
+                <br>
+                <div class="iconLinks">
+                    <a href="facebook.com"><img src="images/icons/fb.png" alt="facebook icon"></a>
+                    <a href="pinterest.com"><img src="images/icons/pinterest.png" alt="pinterest icon"></a>
+                    <a href="twitter.com"><img src="images/icons/twitter.png" alt="twitter icon"></a>  
+                </div>      
+            </div>
+
+            <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.487764522873!2d-111.87577298419987!3d42.09702337920544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e967e1ebc7%3A0x14469667cfe31546!2s30+N+1st+E%2C+Preston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1540083195805"  frameborder="0" style="border:0" allowfullscreen></iframe></div>
+        </div>
+
+        <footer>
+            <p>&copy;2020 Your Weather First | Attributions | Andrew Peteren</p>
+            <p id="currentDateOutput"></p>
+        </footer>
+    </div>
+
+    <script src="scripts/togglemenu.js"></script>
+    <script type="text/javascript" src="scripts/currentdate.js"></script>
+    </body>
+
+</html>
