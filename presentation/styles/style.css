@@ -1,0 +1,16 @@
+body {
+    width: 1000px;
+    margin: 10em auto 0;
+}
+.slider {
+    height: 500px;
+}
+button {
+    margin: 10px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    vertical-align: top;
+}
+.slider_container {
+    text-align: center;
+}
