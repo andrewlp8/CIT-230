@@ -187,7 +187,9 @@ section {
 #prefootMid img {
     width: 2em;
 }
-
+.galImage {
+    max-width: 400px;
+}
 /* footer */
 footer {
     padding: 1em;
