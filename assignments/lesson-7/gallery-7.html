@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>Town Template</title>
         <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/gallery.css">
         <link rel="stylesheet" type="text/css" href="styles/small.css">
         <link rel="stylesheet" type="text/css" href="styles/large.css">
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
@@ -14,64 +16,102 @@
 
     <body>
 
-        <header>
-            <img src="images/logo.png" alt="Weather Site Logo">
+            <header>
+                    <div class="headerLeft">
+                        <img id="siteLogo" src="images/logo.png" alt="Weather Site Logo">
+                    </div>
+                    
+                    <div class="headerText headerMiddle">
+                        <h1>Your Weather First</h1>
+                        <div class="subheading">Where Weather Comes First</div>
+                    </div>  
+        
+                    <div id="remove" class="currentWeather headerRight">
+                        <img src="images/icon.png" alt="Current Weather icon">
+                        <p>Cloudy</p>
+                    </div>
+                </header>
+        
+                <nav class="clearfix">
+        
+                    <button onclick="toggleMenu()">&#9776; Menu</button> 
+        
+                    <ul id="primaryNav" class="hide"> 
+                        <li><a href="#">Home</a></li>
+                        <li ><a href="preston-7.html">Preston</a></li>
+                        <li><a href="#">Soda Springs</a></li>
+                        <li><a href="#">Fish Haven</a></li>
+                        <li><a href="#">Storm Center</a></li>
+                        <li class="active"><a href="gallery-7.html">Gallery</a></li>
+                    </ul>
+                </nav>
 
-            <div class="headerText">
-                <h1>Your Weather First</h1>
-                <div class="subheading">Where Weather Comes First</div>
-            </div>  
-
-            <div id="remove" class="currentWeather">
-                <img src="images/icon.png" alt="Current Weather icon">
-                <p>Cloudy</p>
-            </div>
-        </header>
-
-        <nav class="clearfix">
-
-            <button onclick="toggleMenu()">&#9776; Menu</button> 
-
-            <ul id="primaryNav" class="hide"> 
-                <li><a href="#">Home</a></li>
-                <li><a href="preston-7.html">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
-                <li><a href="#">Storm Center</a></li>
-                <li class="active"><a href="gallery-7.html">Gallery</a></li>
-            </ul>
-        </nav>
-
-    <div id="content">
-
-        <div class="imageSection">
+        <div class="galleryWrapper">
 
             <div class="img1">
-                <picture>
-                        <source media="(max-width: 37.5em)" srcset="images/gallery/small/cloudySmall.jpg">
-                            <source media="(min-width: 64em)" srcset="images/gallery/cloudy.jpg">
-                        <img class="galImage" src="images/gallery/mob/cloudySmall.jpg" alt="cloudy weather">
-                </picture>
+                <figure>
+                    <picture>
+                            <source media="(max-width: 37.5em)" srcset="images/gallery/small/cloudySmall.jpg">
+                            <source media="(min-width: 37.5em)" srcset="images/gallery/cloudy.jpg">
+                            <img class="galImage" src="images/gallery/mob/cloudySmall.jpg" alt="cloudy weather">
+                    </picture>
+                    <figcaption>Up in the clouds!</figcaption>
+                </figure>
             </div>
 
             <div class="img2">
-
+                <figure>
+                    <picture>
+                            <source media="(max-width: 37.5em)" srcset="images/gallery/small/rainySmall.jpg">
+                            <source media="(min-width: 37.5em)" srcset="images/gallery/rainy.jpg">
+                            <img class="galImage" src="images/gallery/mob/rainySmall.jpg" alt="rainy weather">
+                    </picture>
+                    <figcaption>Rain drops settling on a window!</figcaption>
+                </figure>
             </div>
 
             <div class="img3">
-
+                    <figure>
+                            <picture>
+                                    <source media="(max-width: 37.5em)" srcset="images/gallery/small/snowSmall.jpg">
+                                    <source media="(min-width: 37.5em)" srcset="images/gallery/snowy.jpg">
+                                    <img class="galImage" src="images/gallery/mob/snowSmall.jpg" alt="snowy weather">
+                            </picture>
+                            <figcaption>Majestic snowy path!</figcaption>
+                        </figure>
             </div>
 
             <div class="img4">
-
+                    <figure>
+                            <picture>
+                                    <source media="(max-width: 37.5em)" srcset="images/gallery/small/stormySmall.jpg">
+                                    <source media="(min-width: 37.5em)" srcset="images/gallery/stormy.jpg">
+                                    <img class="galImage" src="images/gallery/mob/stormySmall.jpg" alt="stormy weather">
+                            </picture>
+                            <figcaption>Stormy lightning strike!</figcaption>
+                        </figure>
             </div>
 
             <div class="img5">
-
+                    <figure>
+                            <picture>
+                                    <source media="(max-width: 37.5em)" srcset="images/gallery/small/sunnySmall.jpg">
+                                    <source media="(min-width: 37.5em)" srcset="images/gallery/sunny.jpg">
+                                    <img class="galImage" src="images/gallery/mob/sunnySmall.jpg" alt="sunny weather">
+                            </picture>
+                            <figcaption>Serene sunny day!</figcaption>
+                        </figure>
             </div>
 
             <div class="img6">
-
+                    <figure>
+                            <picture>
+                                    <source media="(max-width: 37.5em)" srcset="images/gallery/small/volcanoSmall.jpg">
+                                    <source media="(min-width: 37.5em)" srcset="images/gallery/volcano.jpg">
+                                    <img class="galImage" src="images/gallery/mob/volcanoSmall.jpg" alt="volcano weather">
+                            </picture>
+                            <figcaption>Heated volcano in action!</figcaption>
+                        </figure>
             </div>
                     
 
@@ -81,7 +121,6 @@
             <p>&copy;2020 Your Weather First | Attributions | Andrew Peteren</p>
             <p id="currentDateOutput"></p>
         </footer>
-    </div>
 
     <script src="scripts/togglemenu.js"></script>
     <script type="text/javascript" src="scripts/currentdate.js"></script>
