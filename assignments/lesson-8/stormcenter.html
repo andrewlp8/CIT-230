@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Town Template</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/stormcenter.css">
+        <link rel="stylesheet" type="text/css" href="styles/small.css">
+        <link rel="stylesheet" type="text/css" href="styles/large.css">
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        
+    </head>
+
+    <body>
+
+            <header>
+                    <div class="headerLeft">
+                        <img id="siteLogo" src="images/logo.png" alt="Weather Site Logo">
+                    </div>
+                    
+                    <div class="headerText headerMiddle">
+                        <h1>Your Weather First</h1>
+                        <div class="subheading">Where Weather Comes First</div>
+                    </div>  
+        
+                    <div id="remove" class="currentWeather headerRight">
+                        <img src="images/icon.png" alt="Current Weather icon">
+                        <p>Cloudy</p>
+                    </div>
+                </header>
+        
+                <nav class="clearfix">
+        
+                    <button onclick="toggleMenu()">&#9776; Menu</button> 
+        
+                    <ul id="primaryNav" class="hide"> 
+                        <li><a href="#">Home</a></li>
+                        <li ><a href="preston.html">Preston</a></li>
+                        <li><a href="#">Soda Springs</a></li>
+                        <li><a href="#">Fish Haven</a></li>
+                        <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </nav>
+
+        <div class="wrapper">
+
+                    
+
+        </div>
+
+        <footer>
+            <p>&copy;2020 Your Weather First | Attributions | Andrew Peteren</p>
+            <p id="currentDateOutput"></p>
+        </footer>
+
+    <script src="scripts/togglemenu.js"></script>
+    <script type="text/javascript" src="scripts/currentdate.js"></script>
+    </body>
+
+</html>
