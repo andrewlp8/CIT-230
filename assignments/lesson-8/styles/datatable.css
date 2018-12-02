@@ -1,7 +1,7 @@
 *{
     font-family: Ubuntu, sans-serif;
 }
-table{
+table, caption{
     box-shadow: 11px 11px 25px 0px rgba(41,102,128,1);
     text-align: center;
 }
@@ -17,7 +17,7 @@ table tfoot {
     background-color: #7fb9c2;
     font-size: 0.8em;
 }
-table, th, td {
+table, th, caption, td {
     border: 1px solid rgb(204, 204, 204);
     border-collapse: collapse;
 }
