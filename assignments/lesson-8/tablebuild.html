@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Data Table</title>
+
+        <style>
+        *{
+            font-family: Ubuntu, sans-serif;
+        }
+        table{
+            box-shadow: 11px 11px 25px 0px rgba(41,102,128,1);
+            text-align: center;
+        }
+        caption, th, td {
+            padding: 0.8em;
+        }
+        table caption {
+            background-color: #7fb9c2;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        table tfoot {
+            background-color: #7fb9c2;
+            font-size: 0.8em;
+        }
+        table, th, td {
+            border: 1px solid rgb(204, 204, 204);
+            border-collapse: collapse;
+        }
+        tr:nth-of-type(6) :first-child {
+            font-style: italic;
+        }
+        tr:nth-of-type(5) td:nth-of-type(3){
+            background-color: #628ca6;
+            color: #FFF;
+        }
+        tr:nth-child(odd) {
+            background-color: #e7f0ed;
+        }
+        tr:nth-of-type(1){
+            background-color: #628ca6;
+        }
+
+
+/* 
+
+background-color: #e7ffed; 
+background-color: #e7f0ed;
+
+thead and november sales goal
+background-color: #628ca6;
+
+*/
+
+        </style>
+  
+    </head>
+
+    <body>
+        <main>
+
+                <table>
+                    <caption>ACME Wildwest</caption>
+                    <tr>
+                        <th>Period</th>
+                        <th>Sales</th>
+                        <th>Sales Goal</th>
+                    </tr>
+                    <tr>
+                        <td>August</td>
+                        <td>&#36;3,590</td>
+                        <td>&#36;4,000</td>
+                    </tr>
+                    <tr>
+                        <td>September</td>
+                        <td>&#36;4,420</td>
+                        <td>&#36;5,000</td>
+                    </tr>
+                    <tr>
+                        <td>October</td>
+                        <td>&#36;4,870</td>
+                        <td>&#36;5,000</td>
+                    </tr>
+                    <tr>
+                        <td>November</td>
+                        <td>&#36;8,610</td>
+                        <td>&#36;7,500</td>
+                    </tr>
+                    <tr>
+                        <td>Black Friday</td>
+                        <td colspan="2">&#36;3,200</td>
+                    </tr>
+                    <tr>
+                        <td>December</td>
+                        <td>&#36;6,820</td>
+                        <td>&#36;7,500</td>
+                    </tr>
+                    <tfoot> 
+                        <tr>
+                            <td colspan="3">Compiled 12.20.2020 by bRauls</td>
+                        </tr> 
+                    </tfoot>
+                </table>
+
+        </main>
+
+    </body>
+
+</html>
