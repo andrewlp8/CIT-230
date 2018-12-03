@@ -57,19 +57,19 @@
                         <div class="contact-form" method="get">
                                 <div class="input-field">
                                         
-                                    <!-- full name required -->
-                                    <input id="name" type="text" name="fullname" class="input" placeholder="Name" pattern="[A-Za-z, ' ']{5,}"  minlength=5 >
+                                    <!-- full name  -->
+                                    <input id="name" type="text" name="fullname" class="input" placeholder="Name" pattern="[A-Za-z, ' ']{5,}"  minlength=5 required>
                                     <label id="nameLbl" for="name"></label>
 
-                                    <!-- email required -->
+                                    <!-- email  -->
                                     <label id="emailLbl" for="email"></label>
-                                    <input id="email" type="email" class="input" name="email" placeholder="Email: xxxxx@xxxx.xxx" >
+                                    <input id="email" type="email" class="input" name="email" placeholder="Email: xxxxx@xxxx.xxx" required>
                                     
-                                    <!-- phone number required -->
-                                    <input type="tel" class="input" name="phone" placeholder="Phone: 888-888-8888" pattern="\d{3}[\-]\d{3}[\-]\d{4}" max={5} >
+                                    <!-- phone number  -->
+                                    <input type="tel" class="input" name="phone" placeholder="Phone: 888-888-8888" pattern="\d{3}[\-]\d{3}[\-]\d{4}" max={5} required>
 
-                                    <!-- Zipcode required -->
-                                    <input id="zipcode" type="number" name="zipcode" class="input" placeholder="Zipcode" min="10000" max="99999" >
+                                    <!-- Zipcode  -->
+                                    <input id="zipcode" type="number" name="zipcode" class="input" placeholder="Zipcode" min="10000" max="99999" required>
                                     
                                     <!-- Storm Date -->
                                     <label id="dateLbl" for="date">Date</label>
