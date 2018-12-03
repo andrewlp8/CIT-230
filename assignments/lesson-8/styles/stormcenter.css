@@ -79,11 +79,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
     text-transform: uppercase;
 }
 
-.bznssInfo{
+.bznssInfo {
     display: flex;
     flex-flow: column;
     width: 300px;
     height: 250px;
+    align-self: top;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    color: #FFF;
+}
+.thankyouInfo{
+    display: flex;
+    flex-flow: column;
+    max-width: 500px;
     align-self: top;
     background: rgba(0, 0, 0, 0.8);
     padding: 30px;
@@ -97,28 +108,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
     font-size: 2rem;
     text-shadow: 3px 3px 2px rgba(7, 27, 41, .7);
 }
-.bznssInfo > * img{
+.bznssInfo > * img, .thankyouInfo > * img{
 width: 25px;
 margin-right: 0.5em;
 }
-.bznssInfo a{
+.bznssInfo a, .thankyouInfo a{
     text-align: left;
     text-decoration: none;
     font-size: 1.5em;
     margin-bottom: 1em;
 }
 
-.bznssInfo a:link{
+.bznssInfo a:link, .thankyouInfo a:link{
     color: rgb(255, 255, 255);
     }
-    .bznssInfo a:visited{
+    .bznssInfo a:visited, .thankyouInfo a:visited{
         color: rgb(202, 202, 202);
     }
-.bznssInfo a:hover{
+.bznssInfo a:hover, .thankyouInfo a:hover{
         text-decoration: underline;
         color: rgb(138, 138, 138);
     }
-.bznssInfo a:active{
+.bznssInfo a:active, .thankyouInfo a:active{
         color: rgb(107, 61, 61);
     }
 
