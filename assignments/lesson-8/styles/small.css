@@ -86,5 +86,20 @@ header {
         font-weight: 450;
     }
 
+.containerContact{
+    display: flex;
+        flex-flow: column;
+        justify-content: center;
+}
+    .formField{
+        align-self: center;
+        flex-flow: column;
+    }
+    .contact-form {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
 }
 

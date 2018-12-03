@@ -24,6 +24,7 @@
                     <div class="headerText headerMiddle">
                         <h1>Your Weather First</h1>
                         <div class="subheading">Where Weather Comes First</div>
+                        <div class="subTitle">Storm Center</div>
                     </div>  
         
                     <div id="remove" class="currentWeather headerRight">
@@ -46,9 +47,89 @@
                     </ul>
                 </nav>
 
-        <div class="wrapper">
+        <div class="wrapper" id="forBackImg">
 
                     
+        <div class="containerContact">
+            <h2 id="stormCenterTitle">Report a Storm</h2>
+               
+                <div class="formField">
+                        <div class="contact-form" method="get">
+                                <div class="input-field" action="thankyou.html" target="_blank">
+                                        
+                                    <!-- full name -->
+                                    <input id="name" type="text" name="fullname" class="input" placeholder="Name" pattern="[A-Za-z, ' ']{5,}"  minlength=5 required>
+                                    <label id="nameLbl" for="name"></label>
+
+                                    <!-- email -->
+                                    <label id="emailLbl" for="email"></label>
+                                    <input id="email" type="email" class="input" name="email" placeholder="Email: xxxxx@xxxx.xxx" required>
+                                    
+                                    <!-- phone number -->
+                                    <input type="tel" class="input" name="phone" placeholder="Phone: 888-888-8888" pattern="\d{3}[\-]\d{3}[\-]\d{4}" max={5} required>
+
+                                    <!-- Zipcode -->
+                                    <input id="zipcode" type="number" name="zipcode" class="input" placeholder="Zipcode" min="10000" max="99999" required>
+                                    
+                                    <!-- Storm Date -->
+                                    <label id="dateLbl" for="date">Date</label>
+                                    <input id="date" name="date" type="date" class="input" placeholder="Storm Date" >
+                        
+                                    <!-- Storm Type -->
+                                    <input list="stormType" class="typeArea" placeholder="Storm Type"></input>
+                                    <datalist name="type" id="stormType"  >
+                                        <option class="typeOpt" value="Flash Flood"></option>
+                                        <option class="typeOpt" value="Hail" ></option>
+                                        <option class="typeOpt" value="Hurricane" ></option>
+                                        <option class="typeOpt" value="Thunderstorm"></option>
+                                        <option class="typeOpt" value="Tornadoe"></option>
+                                    </datalist>
+                                    
+                                    <!-- Storm Severity -->
+                                    <div id="stormSev">
+                                        <label id="severity" for="stormSeverity">Storm Severity<br>(10 being Most Severe)</label><br>
+                                        <input type="range" min="0" max="10" value="0" name="percentage">
+                                    </div>
+                                    
+                                    <!-- Storm region -->
+                                    <select name="region" id="stormRegion" class="regionArea">
+                                        <option class="regArea" disabled selected value>Select a region...</option>
+                                        <option class="regOpt" value="Preston">Preston</option>
+                                        <option class="regOpt" value="sodaSprings" >Soda Springs</option>
+                                        <option class="regOpt" value="fishHaven" >Fish Haven</option>
+                                    </select>
+
+                                    <!-- Danger Level -->
+                                    <div id="radioBtns">
+                                        <label id="radioLbl" for="danger">Is it at a dangerous level?</label><br>
+                                        <input type="radio" name="danger" value="yes" checked> Yes<br>
+                                        <input type="radio" name="danger" value="maybe"> Maybe<br>
+                                        <input type="radio" name="danger" value="no"> No <br>
+                                    </div>
+                                    
+                                    <!-- Additional Information -->
+                                    <div class="message">
+                                         <textarea placeholder="Additional information or comments..."></textarea>
+                                         <input type="submit" name="message" value="Send the Report" class="btn" >
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                             
+                            <div class="bznssInfo">
+                                <p id="bzinfoTitle">Your Weather First</p>
+                                <a href="tel:702-277-7945"><img src="images/icons/phone.png" alt="#" />(123)456-7890</a>
+                            
+                                <a href="mailto:weatherfirst@mail.com?Subject=stormcenterContact" target="_top"><img src="images/icons/mail.png" alt="#"/>E-mail us!</a>
+                                
+                                <address>
+                                    123 Street Dr, City, St 12345
+                                </address>
+                            </div>
+                </div>
+               
+            </div>
 
         </div>
 
@@ -56,7 +137,8 @@
             <p>&copy;2020 Your Weather First | Attributions | Andrew Peteren</p>
             <p id="currentDateOutput"></p>
         </footer>
-
+    
+    <script type="text/javascript" src="scripts/range.js"></script>
     <script src="scripts/togglemenu.js"></script>
     <script type="text/javascript" src="scripts/currentdate.js"></script>
     </body>

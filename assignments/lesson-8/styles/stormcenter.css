@@ -1,0 +1,195 @@
+#forBackImg {
+    background-image: url("../images/stormcenter/stormWeb.jpg");
+    background-color: #ccc;
+    background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+    width:100%;
+}
+#stormCenterTitle {
+    text-align: center;
+    font-size: 3em;
+}
+
+.formField{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+.formField .contact-form, .formField .bznssInfo{
+    margin: 2em;
+}
+.containerContact{
+    display: flex;
+    padding: 40px; 
+}
+.containerContact {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+.contact-form{
+    width: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+}
+.input-field {
+    width: 90%;
+}
+.input-field .input, .message textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #868585;
+    padding: 10px;
+    color: #5c5a5a;
+}
+.typeArea, .regionArea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #868585;
+    padding: 5px;
+    color: #9b9b9b;
+}
+.message textarea{
+    height: 100px;
+    width: 100%;
+}
+.btn {
+    background: #7abcff; /* Old browsers */
+background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+    width: 80%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.bznssInfo{
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    height: 250px;
+    align-self: top;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    color: #FFF;
+}
+#bzinfoTitle{
+    font-size: 4em;
+    font-family: Dosis;
+    font-size: 2rem;
+    text-shadow: 3px 3px 2px rgba(7, 27, 41, .7);
+}
+.bznssInfo > * img{
+width: 25px;
+margin-right: 0.5em;
+}
+.bznssInfo a{
+    text-align: left;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.bznssInfo a:link{
+    color: rgb(255, 255, 255);
+    }
+    .bznssInfo a:visited{
+        color: rgb(202, 202, 202);
+    }
+.bznssInfo a:hover{
+        text-decoration: underline;
+        color: rgb(138, 138, 138);
+    }
+.bznssInfo a:active{
+        color: rgb(107, 61, 61);
+    }
+
+input:not([type="submit"]):valid:focus,
+textarea:valid:focus {
+    box-shadow: 0 0 10px rgba(101, 169, 10, 0.8);   
+    outline: 0;
+}
+input:not([type="submit"]):invalid:focus,
+textarea:invalid:focus {
+    box-shadow: 0 0 10px rgba(204, 63, 133, 0.8);   
+    outline: 0;
+}
+
+input[type="text"]#name:focus:invalid ~ #nameLbl:before {
+    content: "Please enter your full name!";
+    color: #868585;
+    font-size: 0.8em;
+}
+input:focus:valid ~ #nameLbl:before {
+    content: "Great, thank you!";
+    color: rgba(228, 241, 254, 0.8);
+    font-size: 0.8em;
+}
+.typeOpt, .regOpt {
+    color: #868585;
+}
+
+.contact-form:hover, .bznssInfo:hover {
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+#dateLbl {
+    color: #868585;
+    margin-top: 18px;
+    margin-bottom: -10px;
+}
+
+#typeLbl, #regLbl{
+    color: #868585;
+    margin-top: 18px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+#radioBtns, #stormSev {
+    margin-top: 15px;
+    color: #868585;
+}
+#stormSev input {
+    margin-top: 20px;
+}
+.message {
+    margin-top: 20px;
+}
+.message textarea {
+    color: #FFF;
+}
+input[type="range"] {
+    position: relative;
+  }
+  
+  input[type="range"]:before {
+    position: absolute;
+    top: -17px;
+    left: 50%;
+    margin-left: -10px;
+    content: attr(value);
+    display: block;
+    text-align: center;
+    width: 20px;
+    height: 10px;
+  }

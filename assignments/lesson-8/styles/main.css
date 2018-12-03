@@ -31,6 +31,13 @@ header {
     font-style: italic;
     margin-top: -25px;
 }
+.subTitle {
+    font-family: Lato;
+    font-size: 1.4rem;
+    color: #FFF;
+    font-style: italic;
+    margin-top: 10px;
+}
 .headerRight img {
     width: 80%;
 }
