@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Our superheroes</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Fruktur" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+
+  <body>
+
+      <header>
+
+      </header>
+
+      <section>
+
+      </section>
+
+    <script>
+        var requestURL = 'myOwn.json';
+        var request = new XMLHttpRequest();
+
+        request.open('GET', requestURL);
+
+        request.responseType = 'json';
+
+        request.send();
+
+        request.onload = function() {
+            var superHeroes = request.response;
+            populateHeader(superHeroes);
+            showHeroes(superHeroes);
+        }
+        function populateHeader(jsonObj) {
+            var myH1 = document.createElement('h1');
+            myH1.textContent = jsonObj['title'];
+            header.appendChild(myH1);
+
+            var myPara = document.createElement('p');
+            myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+            header.appendChild(myPara);
+        }
+
+        function showHeroes(jsonObj) {
+        var family = jsonObj['members'];
+            
+        for (var i = 0; i < family.length; i++) {
+            var myArticle = document.createElement('article');
+            var myH2 = document.createElement('h2');
+            var myPara1 = document.createElement('p');
+            var myPara2 = document.createElement('p');
+            var myPara3 = document.createElement('p');
+            var myList = document.createElement('ul');
+
+            myH2.textContent = family[i].name;
+            myPara1.textContent = 'Also known as: ' + family[i].aka;
+            myPara2.textContent = 'Age: ' + family[i].age;
+            myPara3.textContent = 'Jobs:';
+                
+            var jobs = family[i].jobs;
+            for (var j = 0; j < jobs.length; j++) {
+            var listItem = document.createElement('li');
+            listItem.textContent = jobs[j];
+            myList.appendChild(listItem);
+            }
+
+            myArticle.appendChild(myH2);
+            myArticle.appendChild(myPara1);
+            myArticle.appendChild(myPara2);
+            myArticle.appendChild(myPara3);
+            myArticle.appendChild(myList);
+
+            section.appendChild(myArticle);
+        }
+        }
+    
+    
+    var header = document.querySelector('header');
+    var section = document.querySelector('section');
+    
+    </script>
+  </body>
+</html>

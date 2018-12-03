@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Town Template</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/stormcenter.css">
+        <link rel="stylesheet" type="text/css" href="styles/small.css">
+        <link rel="stylesheet" type="text/css" href="styles/large.css">
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        
+    </head>
+
+    <body>
+
+            <header>
+                    <div class="headerLeft">
+                        <img id="siteLogo" src="images/logo.png" alt="Weather Site Logo">
+                    </div>
+                    
+                    <div class="headerText headerMiddle">
+                        <h1>Your Weather First</h1>
+                        <div class="subheading">Where Weather Comes First</div>
+                        <div class="subTitle">Storm Center</div>
+                    </div>  
+        
+                    <div id="remove" class="currentWeather headerRight">
+                        <img src="images/icon.png" alt="Current Weather icon">
+                        <p>Cloudy</p>
+                    </div>
+                </header>
+        
+                <nav class="clearfix">
+        
+                    <button onclick="toggleMenu()">&#9776; Menu</button> 
+        
+                    <ul id="primaryNav" class="hide"> 
+                        <li><a href="#">Home</a></li>
+                        <li ><a href="preston.html">Preston</a></li>
+                        <li><a href="#">Soda Springs</a></li>
+                        <li><a href="#">Fish Haven</a></li>
+                        <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </nav>
+
+        <div class="wrapper" id="forBackImg">
+
+                    
+        <div class="containerContact">
+            <h2 id="stormCenterTitle">Thank you!</h2>
+               
+                <div class="formField">
+                        
+                             
+                            <div class="thankyouInfo">
+                                <p id="bzinfoTitle">Your Weather First Appreciates your Input</p>
+                                <p>If you have any further questions or comments you can reach us at our info below! Thank you!</p>
+
+                                <a href="tel:702-277-7945"><img src="images/icons/phone.png" alt="#" />999.999.9999</a>
+                            
+                                <a href="mailto:theweathersite@tws.com?Subject=stormcenterContact" target="_top"><img src="images/icons/mail.png" alt="#"/>theweathersite@tws.com</a>
+                                
+                                <address>
+                                    30 N 1st E Preston, ID 83263
+                                </address>
+                            </div>
+                </div>
+               
+            </div>
+
+        </div>
+        <div id="preFooter">
+
+                <div id="prefootMid">
+                    <div>
+                        <h4>Your Weather First</h4>
+                        <address>
+                            <div class="footerBzInfo">
+                                <div>
+                                    <img src="images/icons/location.png" alt="location icon"> 
+                                </div>
+                                <div>
+                                    30 N 1st E Preston, ID 83263
+                                </div>
+                            </div>
+                        </address>
+            
+                        <div class="footerBzInfo">
+                            <div>
+                                <a href="tel:999-999-9999"><img src="images/icons/phone.png" alt="phone icon">
+                            </div>
+                            <div>
+                                999.999.9999</a>
+                            </div>
+                                
+                        </div>
+                    </div>
+        
+                    <div id="midfootMid">
+                        <div class="footerBzInfo">
+                            <div>
+                                <a href="mailto:theweathersite@tws.com"><img src="images/icons/mail.png" alt="mail icon">
+                            </div>
+                            <div>
+                                theweathersite@tws.com</a>
+                            </div>
+                                
+                        </div>
+                        
+                        <div class="iconLinks">
+                            <a href="facebook.com"><img src="images/icons/fb.png" alt="facebook icon"></a>
+                            <a href="pinterest.com"><img src="images/icons/pinterest.png" alt="pinterest icon"></a>
+                            <a href="twitter.com"><img src="images/icons/twitter.png" alt="twitter icon"></a>  
+                        </div>      
+                    </div>
+        
+                    <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.487764522873!2d-111.87577298419987!3d42.09702337920544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e967e1ebc7%3A0x14469667cfe31546!2s30+N+1st+E%2C+Preston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1540083195805"  frameborder="0" style="border:0" allowfullscreen></iframe></div>
+          
+                </div>
+            </div>
+        <footer>
+            <p>&copy;2020 Your Weather First | Attributions | Andrew Peteren</p>
+            <p id="currentDateOutput"></p>
+            <p id="openWeatherLink"><a href="https://openweathermap.org/">Open Weather Map</a></p>
+        </footer>
+    
+    <script type="text/javascript" src="scripts/range.js"></script>
+    <script src="scripts/togglemenu.js"></script>
+    <script type="text/javascript" src="scripts/currentdate.js"></script>
+
+    </body>
+
+</html>
