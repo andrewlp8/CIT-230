@@ -23,12 +23,12 @@
             <div class="headerText headerMiddle">
                 <h1>Your Weather First</h1>
                 <div class="subheading">Where Weather Comes First</div>
-                <div class="subTitle">Preston</div>
+                <div class="subTitle" id="city">Preston</div>
             </div>  
 
-            <div id="remove" class="currentWeather headerRight">
-                <img src="images/icon.png" alt="Current Weather icon">
-                <p>Cloudy</p>
+            <div  class="currentWeather headerRight">
+                <div id="wImage"></div>
+                <div id="imgDescription"></div>
             </div>
         </header>
 
@@ -96,30 +96,34 @@
             </div>
         </main>
         
-        <section class="forecast, clearfix">
-        <h3>High Temperature Forecast</h3>
-            <table>
-                <thead>
-                <tr>
-                    <th>Day</th>
-                    <th>Wed</th>
-                    <th>Thu</th>
-                    <th>Fri</th>
-                    <th>Sat</th>
-                    <th>Sun</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th>Forecast</th>
-                    <td>89&deg;F</td>
-                    <td>87&deg;F</td>
-                    <td>78&deg;F</td>
-                    <td>75&deg;F</td>
-                    <td>72&deg;F</td>
-                </tr>
-                </tbody>
-            </table>
+        <section class="forecast">
+            <div id="tableContainer">
+                    <h3>High Temperature Forecast</h3>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>Forecast</th>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    
+            </div>
+        
         </section>
 
         <section class="clearfix">
@@ -194,8 +198,12 @@
     </footer>
 
     <script src="scripts/togglemenu.js"></script>
-    <script type="text/javascript" src="scripts/prestonAPI.js"></script>
+    
     <script type="text/javascript" src="scripts/currentdate.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/weather.js"></script>
+
     </body>
 
 </html>

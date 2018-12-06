@@ -43,9 +43,17 @@ nav li a:active {
 }
 
 header {
-    flex-flow: column;
-    height: 350px;
+    flex-flow: row wrap;
+    height: 50%;
 }
+.headerMiddle {
+    margin-bottom: 2em;
+}
+.headerRight {
+    margin-bottom: 2em;
+}
+
+/* 5 day forecast */
 
 
    #backgroundImage {
