@@ -32,7 +32,7 @@ switch (city){
     
 // Daily
 var weatherRequest = new XMLHttpRequest();
-weatherRequest.open('GET', 'http://api.openweathermap.org/data/2.5/weather?id=' + cityId + '&units=imperial&async=true' + '&APPID=44854c54343626da5e75e87135a175f6');
+weatherRequest.open('GET', '//api.openweathermap.org/data/2.5/weather?id=' + cityId + '&units=imperial&async=true' + '&APPID=44854c54343626da5e75e87135a175f6');
 weatherRequest.onload = function () {
     
     var data = JSON.parse(weatherRequest.responseText);
