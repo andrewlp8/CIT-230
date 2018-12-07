@@ -1,0 +1,30 @@
+@media screen and (min-width: 767px) and (max-width: 64em) {
+    .medView {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+
+    }
+    nav button {
+        margin: 0.2rem 2%;
+        background-color: transparent;
+        border: none;
+        font-size: 1.6rem;
+        color: #555;
+    }
+ 
+    /* navigation */
+    nav button { display: none; }
+    nav {
+        display: grid;
+        align-items: start;
+        justify-items: start;
+        
+    }
+    nav ul {
+        display: grid;
+        grid-template-columns:  100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 0.4rem 2%;
+    }
+
+}
