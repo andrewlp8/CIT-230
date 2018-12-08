@@ -4,7 +4,6 @@
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 1fr 1fr 1fr;
-        background-color: #013c74b9;
         justify-items: center;
         text-align: center;
         color: #FFF;

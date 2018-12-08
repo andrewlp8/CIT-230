@@ -54,7 +54,8 @@
             <h2 id="stormCenterTitle">Report a Storm</h2>
                
                 <div class="formField">
-                        <div class="contact-form" method="get">
+                        <div class="contact-form">
+                            <form action="#" method="get">
                                 <div class="input-field">
                                         
                                     <!-- full name  -->
@@ -72,12 +73,12 @@
                                     <input id="zipcode" type="number" name="zipcode" class="input" placeholder="Zipcode" min="10000" max="99999" required>
                                     
                                     <!-- Storm Date -->
-                                    <label id="dateLbl" for="date">Date</label>
-                                    <input id="date" name="date" type="date" class="input" placeholder="Storm Date" >
+                                    <label id="dateLbl">Date</label>
+                                    <input id="date" name="date" type="date" class="input" >
                         
                                     <!-- Storm Type -->
-                                    <input list="stormType" class="typeArea" placeholder="Storm Type"></input>
-                                    <datalist name="type" id="stormType"  >
+                                    <input list="stormType" class="typeArea" placeholder="Storm Type">
+                                    <datalist id="stormType"  >
                                         <option class="typeOpt" value="Flash Flood"></option>
                                         <option class="typeOpt" value="Hail" ></option>
                                         <option class="typeOpt" value="Hurricane" ></option>
@@ -87,7 +88,7 @@
                                     
                                     <!-- Storm Severity -->
                                     <div id="stormSev">
-                                        <label id="severity" for="stormSeverity">Storm Severity<br>(10 being Most Severe)</label><br>
+                                        <label id="severity" >Storm Severity<br>(10 being Most Severe)</label><br>
                                         <input type="range" min="0" max="10" value="0" name="percentage">
                                     </div>
                                     
@@ -100,8 +101,8 @@
                                     </select>
 
                                     <!-- Danger Level -->
-                                    <div id="radioBtns">
-                                        <label id="radioLbl" for="danger">Is it at a dangerous level?</label><br>
+                                    <div id="danger">
+                                        <label id="radioLbl">Is it at a dangerous level?</label><br>
                                         <input type="radio" name="danger" value="yes" checked> Yes<br>
                                         <input type="radio" name="danger" value="maybe"> Maybe<br>
                                         <input type="radio" name="danger" value="no"> No <br>
@@ -115,6 +116,7 @@
 
                                     
                                 </div>
+                            </form> 
                             </div>
                              
                             <div class="bznssInfo">
