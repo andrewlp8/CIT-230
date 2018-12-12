@@ -1,0 +1,258 @@
+@media only screen and (min-width: 1024px) {
+
+    /* Header */
+    header {
+        width: 100%;
+        height: 100px;
+        margin: 0;
+        background-color: #FFFEFE;
+        display: flex;
+        flex-flow: row;
+        margin-top: 2em;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: -1em;
+    }
+    #siteLogo {
+        margin-top: 1.3em;
+        width: 15em;
+    }
+    #siteLogo:hover {
+        -webkit-filter: drop-shadow(5px 2px 2px #0B0B0B);
+  filter: drop-shadow(5px 2px 2px #0B0B0B);
+    }
+    .headerRight {
+        font-size: 2.2em;
+    }
+    .headerRight a {
+        color: #0B0B0B;
+    }
+    .headerRight a:hover {
+        color: #527500;
+        text-decoration: overline underline;
+        text-decoration-color: #0B0B0B;
+    }
+    .stickIt {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+    }
+
+    /* Navigation */
+    nav button { display: none; }
+    nav{
+        margin: 0;
+        z-index: 3;
+      }
+      .navigation {
+        list-style: none;
+        margin: 0; 
+        font-size:  1.2rem;
+        background: #FFFEFE;
+        display: flex;
+        
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        border-bottom: 1px solid #0B0B0B;
+        -webkit-box-shadow: 0 6px 6px 0 rgb(53, 53, 53);
+	   -moz-box-shadow: 0 6px 6px 0 rgb(53, 53, 53);
+	        box-shadow: 0 6px 6px 0 rgb(53, 53, 53);
+      }
+      #endNav{
+        margin-right: 5em;
+      }
+      .navigation a {
+        text-decoration: none;
+        display: block;
+        padding: 0.8em 1em;
+        color: #0B0B0B;
+      }
+      .navigation a:hover {
+        color: #d1d5d8;
+        text-decoration: overline;
+        text-decoration-color: #0B0B0B;
+      }
+      .active {
+        background-color: #d1d5d8;
+        border-radius: 4em 4em 0 0;
+    }
+    .active a:hover {
+        color: #0B0B0B;
+        text-decoration: none;
+    }
+
+
+
+
+    /* Home Page */
+    #mainWelcome {
+        display: flex;
+        margin: 5em 4em;
+    }
+    #mainWelcome > div:nth-child(1) {
+        padding: 0 4em;
+    }
+    #mainWelcome img {
+        border-radius: 0.2em;
+        -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+	   -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+	        box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    }
+    #mainWelcome h1 {
+        font-size: 2.262em;
+    }
+    #mainWelcome a {
+        color: #5c8301;
+    }
+    #mainWelcome a:hover {
+        color: #9ee200;
+    }
+    #welcomeSubTitle {
+        font-size: 1.5em;
+    }
+    #homeContent {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .homeMain {
+        display: flex;
+        justify-content: space-around;
+    }
+    /* Hero Img Section */
+    .heroContainer {
+        position: relative;
+    }
+    .heroContainer img {
+        width: 100%;
+        margin: 0;
+        z-index: 0;
+    }
+    .heroContainer a {
+        width: 25%;
+        text-align: center;
+        position: absolute;
+        bottom: -1em;
+        left: -1em;
+        padding: 1em 2em;
+        background-color: #5c8301;
+        color: #FFFEFE;
+        font-size: 1.5em;
+        border-radius: 0.5em;
+        -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+	   -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+	        box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    }
+    .heroContainer a:hover {
+        background-color: #9ee200;
+        color: #0B0B0B;
+    }
+    /* Temple Info Section */
+    .templeInfoContainer {
+        width: 600px;
+        margin: 5em auto 0 auto;
+        background-color: #d1d5d8;
+        padding: 2em;
+        border-radius: 0.2em;
+        display: flex;
+        justify-content: center;
+    }
+    .indTempImg {
+        padding-top: 2em;
+        align-self: flex-start;
+    }
+    .indTempImg img{
+        width: 300px;
+        border-radius: 0.2em;
+    }
+    .templeTextContainer{
+        margin-left: 2em;
+    }
+    #mainTempleInfo h3{
+        margin-bottom: -0.6em;        
+    }
+    /* Amenities Section */
+    .amenitiesHome {
+        margin: 5em;
+        background-color: #1f1f1f;
+        padding: 2em;
+        border-radius: 0.2em;
+        color: #FFFEFE;
+    }
+    .amenitiesHome li {
+        padding: 0.38em 0;
+        list-style: none; 
+    }
+    .amenitiesHome li:before {
+        content: "\2022";
+        color: #5c8301;
+        font-weight: bold;
+        display: inline-block; 
+        width: 1em;
+        margin-left: -1em;
+    }
+
+
+    /* footer section */
+    footer {
+        max-width:75%;
+        margin: 0 auto;
+    }
+    #prefootMid img:hover {
+        box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+        border-radius: 50%;
+    }
+    .footerBzInfo{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        padding: 0.2em;
+    }
+    #preFooter {
+        margin-top: 5em;
+        background-color: #d1d5d8;
+    }
+    
+    #preFooter h4 {
+        font-family: Dosis;
+    }
+    #prefootMid { 
+        display: flex;
+        justify-content: space-evenly;
+        align-self: center;
+        padding: 25px;
+        color: #0B0B0B;
+    }
+    #prefootMid div {
+        align-self: center;
+    }
+    
+    #prefootMid a{
+        color: #0b0b0b;
+        text-decoration: none;
+    }
+    #prefootMid a:hover {
+        color: #527500;
+        text-decoration: overline underline;
+        text-decoration-color: #0B0B0B;
+    }
+    .iconLinks {
+        width: 100%;
+        display: inline-block;
+    }
+    #prefootMid img {
+        width: 3em;
+        padding: 2%
+    }
+    .bottomFooter {
+        width: 100%;
+        margin: 0;
+        background-color: #FFFEFE;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        -webkit-box-shadow: 0 -6px 6px 0 rgb(53, 53, 53);
+	   -moz-box-shadow: 0 -6px 6px 0 rgb(53, 53, 53);
+	        box-shadow: 0 -6px 6px 0 rgb(53, 53, 53);
+    }
+}
