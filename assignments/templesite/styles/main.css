@@ -1,40 +1,231 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald');
 
-/* General Main page styles  */
-body {
-    width: 100%;
-    margin: 0;
-    background-color: #FFFEFE;
-    font-family: 'Oswald', sans-serif;
-    color: #0B0B0B;
-}
-h1, h2, h3 {
-    font-family: 'Josefin Sans', sans-serif;
-}
-h1 {
-    font-size: 2.625em;
-}
-h2 {
-    font-size: 2em;
-}
-h3 {
-    font-size: 1.5em;
-}
-p, li {
-    font-size: 1.125em;
-}
-ul {
-    list-style-type: none;
-}
-a {
-    text-decoration: none;
-}
+    /* General Main page styles  */
+    body {
+        width: 100%;
+        margin: 0;
+        background-color: #FFFEFE;
+        font-family: 'Oswald', sans-serif;
+        color: #0B0B0B;
+    }
+    h1, h2, h3 {
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    h1 {
+        font-size: 2.625em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    p, li {
+        font-size: 1.125em;
+    }
+    ul {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+    }
 
-.onHover:hover {
-    -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
-	   -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
-	        box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
-}
+    .onHover:hover {
+        -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+        -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+                box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    }
+
+
+    /* Header */
+    header {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        background-color: #FFFEFE;
+    }
+    #siteLogo {
+        width: 15em;
+    }
+    #siteLogo:hover {
+        -webkit-filter: drop-shadow(5px 2px 2px #0B0B0B);
+    filter: drop-shadow(5px 2px 2px #0B0B0B);
+    }
+
+    .headerRight a {
+        color: #0B0B0B;
+    }
+    .headerRight a:hover {
+        color: #527500;
+        text-decoration: overline underline;
+        text-decoration-color: #0B0B0B;
+    }
+    .stickIt {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+    }
+
+    /* Navigation */
+    nav {
+        margin-top: -1em;
+        z-index: 15;
+        background-color: #FFF;
+    }
+    nav button {
+        position: absolute;
+        border: none;
+        background: #d1d5d810;
+        font-weight: bold;
+    }
+    nav button:focus {outline:0;}
+    nav button:hover {
+        background-color: #d1d5d810;
+        color: #527500;
+    }
+
+    /* footer section */
+    #prefootMid img:hover {
+        box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+        border-radius: 50%;
+    }
+    .footerBzInfo{
+        display: flex;
+    }
+    #preFooter {
+        margin-top: 5em;
+        background-color: #d1d5d8;
+    }
+
+    #preFooter h4 {
+        font-family: Dosis;
+    }
+    #prefootMid { 
+        display: flex;
+        color: #0B0B0B;
+    }
+    #prefootMid a{
+        color: #0b0b0b;
+        text-decoration: none;
+    }
+    #prefootMid a:hover {
+        color: #527500;
+        text-decoration: overline underline;
+        text-decoration-color: #0B0B0B;
+    }
+    #midfootMid {
+        display: flex;
+    }
+    #midfootMid a {   
+        display: flex;
+    }
+    .iconLinks {
+        width: 100%;
+    }
+    #prefootMid img {
+        padding: 2%
+    }
+    .bottomFooter {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        background-color: #FFFEFE;
+        -webkit-box-shadow: 0 -6px 6px 0 rgb(53, 53, 53);
+        -moz-box-shadow: 0 -6px 6px 0 rgb(53, 53, 53);
+        box-shadow: 0 -6px 6px 0 rgb(53, 53, 53);
+    }
+
+
+
+    /**************
+    *  
+    * Home Page
+    *
+    ***************/
+    /* Hero img and book now btn */
+    #mainWelcome {
+        display: flex;
+    }
+    #mainWelcome img {
+        border-radius: 0.2em;
+        -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+            box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    }
+    #mainWelcome h1 {
+        font-size: 2.262em;
+    }
+    #mainWelcome a {
+        color: #5c8301;
+    }
+    #mainWelcome a:hover {
+        color: #9ee200;
+    }
+    #welcomeSubTitle {
+        font-size: 1.5em;
+    }
+    #homeContent {
+        margin: 0 auto;
+    }
+    .homeMain {
+        display: flex;
+    }
+    /* Hero Img Section */
+    .heroContainer a {
+        text-align: center;
+        background-color: #5c8301;
+        color: #FFFEFE;
+        border-radius: 0.5em;
+        -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+            box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    }
+    .heroContainer a:hover {
+        background-color: #9ee200;
+        color: #0B0B0B;
+    }
+    /* Temple Info Section */
+    .templeInfoContainer {
+        background-color: #d1d5d8;
+        padding: 2em;
+        border-radius: 0.2em;
+        display: flex;
+    }
+    .indTempImg {
+        padding-top: 2em;
+        align-self: flex-start;
+    }
+    .indTempImg img{
+        width: 100%;
+        border-radius: 0.2em;
+    }
+    .templeTextContainer{
+        margin-left: 2em;
+    }
+    #mainTempleInfo h3{
+        margin-bottom: -0.6em;        
+    }
+    /* Amenities Section */
+    .amenitiesHome {
+        background-color: #1f1f1f;
+        padding: 2em;
+        border-radius: 0.2em;
+        color: #FFFEFE;
+    }
+    .amenitiesHome li {
+        padding: 0.38em 0;
+        list-style: none; 
+    }
+    .amenitiesHome li:before {
+        content: "\2022";
+        color: #5c8301;
+        font-weight: bold;
+        display: inline-block; 
+        width: 1em;
+        margin-left: -1em;
+    }
+
+
 
 
 
