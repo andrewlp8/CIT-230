@@ -72,8 +72,8 @@ footer {
 }
 #prefootMid { 
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    justify-content: center;
     padding: 1em;
 }
 .iconLinks {
