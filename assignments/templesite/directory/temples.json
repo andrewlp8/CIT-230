@@ -3,66 +3,68 @@
         {
             "name": "Copenhagen Denmark Temple",
             "closures": [
-                "Tuesday, December 25, 2018 - Wednesday, December 26, 2018", 
-                "Tuesday, January 1, 2019", 
-                "Monday, April 22, 2019 - Monday, May 6, 2019", 
-                "Monday, September 23, 2019 - Monday, October 7, 2019", 
-                "Tuesday, December 24, 2019 - Thursday, December 26, 2019", 
-                "Tuesday, December 31, 2019", 
-                "Wednesday, January 1, 2020" 
+                { "date": "Tuesday, December 25, 2018 - Wednesday, December 26, 2018"},
+                { "date": "Tuesday, January 1, 2019"},
+                { "date": "Monday, April 22, 2019 - Monday, May 6, 2019"}, 
+                { "date": "Monday, September 23, 2019 - Monday, October 7, 2019"},
+                { "date": "Tuesday, December 24, 2019 - Thursday, December 26, 2019"}, 
+                { "date": "Tuesday, December 31, 2019"}, 
+                { "date": "Wednesday, January 1, 2020" }
             ]
         },
         {
             "name": "Johannesburg South Africa Temple",
             "closures": [
-                "Monday, December 24, 2018 (Limited Hours)",
-                "Tuesday, December 25, 2018 (Limited Hours)",
-                "Wednesday, December 26, 2018 (Limited Hours)",
-                "Monday, December 31, 2018 (Limited Hours)",
-                "Tuesday, January 1, 2019 (Limited Hours)",
-                "Monday, February 11, 2019 - Monday, February 25, 2019",
-                "Thursday, March 21, 2019 (Limited Hours)",
-                "Saturday, April 13, 2019",
-                "Friday, April 19, 2019 (Limited Hours)",
-                "Wednesday, May 1, 2019 (Limited Hours)",
-                "Monday, August 5, 2019 - Monday, August 19, 2019",
-                "Saturday, October 12, 2019",
-                "Tuesday, December 24, 2019 (Limited Hours)",
-                "Wednesday, December 25, 2019 (Limited Hours)",
-                "Thursday, December 26, 2019 (Limited Hours)",
-                "Tuesday, December 31, 2019 (Limited Hours)"
+                {"date": "Monday, December 24, 2018 (Limited Hours)"},
+                {"date": "Tuesday, December 25, 2018 (Limited Hours)"},
+                {"date": "Wednesday, December 26, 2018 (Limited Hours)"},
+                {"date": "Monday, December 31, 2018 (Limited Hours)"},
+                {"date": "Tuesday, January 1, 2019 (Limited Hours)"},
+                {"date": "Monday, February 11, 2019 - Monday, February 25, 2019"},
+                {"date": "Thursday, March 21, 2019 (Limited Hours)"},
+                {"date": "Saturday, April 13, 2019"},
+                {"date": "Friday, April 19, 2019 (Limited Hours)"},
+                {"date": "Wednesday, May 1, 2019 (Limited Hours)"},
+                {"date": "Monday, August 5, 2019 - Monday, August 19, 2019"},
+                {"date": "Saturday, October 12, 2019"},
+                {"date": "Tuesday, December 24, 2019 (Limited Hours)"},
+                {"date": "Wednesday, December 25, 2019 (Limited Hours)"},
+                {"date": "Thursday, December 26, 2019 (Limited Hours)"},
+                {"date": "Tuesday, December 31, 2019 (Limited Hours)"}
             ]
         },
         {
             "name": "Las Vegas Nevada Temple",
             "closures": [ 
-                "Tuesday, December 25, 2018", 
-                "Tuesday, January 1, 2019", 
-                "Monday, January 7, 2019 - Monday, January 21, 2019", 
-                "Saturday, April 6, 2019", 
-                "Thursday, July 4, 2019", 
-                "Monday, July 8, 2019 - Monday, August 5, 2019", 
-                "Saturday, October 5, 2019", 
-                "Wednesday, November 27, 2019 (Limited Hours)", 
-                "Thursday, November 28, 2019", 
-                "Tuesday, December 24, 2019 - Wednesday, December 25, 2019" 
+                {"date": "Tuesday, December 25, 2018"}, 
+                {"date": "Tuesday, January 1, 2019"}, 
+                {"date": "Monday, January 7, 2019 - Monday, January 21, 2019"}, 
+                {"date": "Saturday, April 6, 2019"}, 
+                {"date": "Thursday, July 4, 2019"}, 
+                {"date": "Monday, July 8, 2019 - Monday, August 5, 2019"}, 
+                {"date": "Saturday, October 5, 2019"}, 
+                {"date": "Wednesday, November 27, 2019 (Limited Hours)"}, 
+                {"date": "Thursday, November 28, 2019"}, 
+                {"date": "Tuesday, December 24, 2019 - Wednesday, December 25, 2019"} 
             ]
         },
         {
             "name": "Portland Oregon Temple",
             "closures": [
-                "Tuesday, December 25, 2018",
-                "Tuesday, January 1, 2019",
-                "Tuesday, January 29, 2019 - Monday, February 18, 2019",
-                "Saturday, April 6, 2019",
-                "Thursday, July 4, 2019",
-                "Monday, July 29, 2019 - Monday, August 12, 2019",
-                "Saturday, October 5, 2019",
-                "Wednesday, November 27, 2019 (Limited Hours)",
-                "Thursday, November 28, 2019",
-                "Tuesday, December 24, 2019",
-                "Wednesday, December 25, 2019"
+                {"date":"Tuesday, December 25, 2018"},
+                {"date": "Tuesday, January 1, 2019"},
+                {"date": "Tuesday, January 29, 2019 - Monday, February 18, 2019"},
+                {"date": "Saturday, April 6, 2019"},
+                {"date": "Thursday, July 4, 2019"},
+                {"date": "Monday, July 29, 2019 - Monday, August 12, 2019"},
+                {"date": "Saturday, October 5, 2019"},
+                {"date": "Wednesday, November 27, 2019 (Limited Hours)"},
+                {"date": "Thursday, November 28, 2019"},
+                {"date": "Tuesday, December 24, 2019"},
+                {"date": "Wednesday, December 25, 2019"}
             ]
         }
     ]
   }
+  
+ 
