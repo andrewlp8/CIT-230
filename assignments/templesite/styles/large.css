@@ -93,12 +93,12 @@
     padding: 0 2em;
 }
 .templeInfoContainer {
-    width: 600px;
+    max-width: 50%;
     margin: 5em auto 0 auto;
     background-color: #d1d5d8;
     padding: 2em;
     border-radius: 0.2em;
-    justify-content: center;
+    justify-content: space-around;
 }
 .indTempImg {
     padding-top: 2em;
@@ -165,6 +165,7 @@ footer {
     width: 400px;
     height: 300px;
 }
+
 
 
 
