@@ -150,14 +150,14 @@ footer {
 }
 /* temple info section */
 .templeInfoContainer {
-    flex-flow: row;
+    flex-flow: row wrap;
     max-width: 90%;
     margin: 1em;
 }
 /* amenities info section */
 .amenitiesHome {
     flex-flow: column;
-    max-width: 90%;
+    max-width: 100%;
     margin: 1em;
     align-self: center;
 }

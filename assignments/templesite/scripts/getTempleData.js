@@ -8,22 +8,12 @@ myRequest.open('GET', '\directory/temples.json');
 myRequest.onload = function () {
     var data = JSON.parse(myRequest.responseText);
 
-    copenhagenTitle(data);
     showCopenhagenClosures(data);
-    SAfricaTitle(data);
     showSAfricaClosures(data);
-    LVNevadaTitle(data);
     showLVNevadaClosures(data);
-    portlandTitle(data);
     showPortlandClosures(data);
 
     // CopenHagen
-    function copenhagenTitle(jsonObj) {
-        var myh2 = document.createElement('h2');
-        myh2.textContent = jsonObj.temple[0].name;
-        document.getElementById('temple1Title').appendChild(myh2);
-    }
-
     function showCopenhagenClosures(jsonObj) {
         var closureDate = jsonObj.temple[0].closures;
 
@@ -38,12 +28,6 @@ myRequest.onload = function () {
     }
 
     // South Africa
-    function SAfricaTitle(jsonObj) {
-        var myh2 = document.createElement('h2');
-        myh2.textContent = jsonObj.temple[1].name;
-        document.getElementById('temple2Title').appendChild(myh2);
-    }
-
     function showSAfricaClosures(jsonObj) {
         var closureDate = jsonObj.temple[1].closures;
 
@@ -58,12 +42,6 @@ myRequest.onload = function () {
     }
 
     // Las Vegas
-    function LVNevadaTitle(jsonObj) {
-        var myh2 = document.createElement('h2');
-        myh2.textContent = jsonObj.temple[2].name;
-        document.getElementById('temple3Title').appendChild(myh2);
-    }
-
     function showLVNevadaClosures(jsonObj) {
         var closureDate = jsonObj.temple[3].closures;
 
@@ -78,12 +56,6 @@ myRequest.onload = function () {
     }
 
     // Portland
-    function portlandTitle(jsonObj) {
-        var myh2 = document.createElement('h2');
-        myh2.textContent = jsonObj.temple[3].name;
-        document.getElementById('temple4Title').appendChild(myh2);
-    }
-
     function showPortlandClosures(jsonObj) {
         var closureDate = jsonObj.temple[3].closures;
 
