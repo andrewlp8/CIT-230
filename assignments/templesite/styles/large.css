@@ -34,8 +34,8 @@
    -moz-box-shadow: 0 6px 6px 0 rgb(53, 53, 53);
         box-shadow: 0 6px 6px 0 rgb(53, 53, 53);
    }
-   #endNav{
-    margin-right: 5em;
+   #primaryNav {
+    padding-right: 5em;
   }
    
   .navigation a {
@@ -58,8 +58,49 @@
     text-decoration: none;
 }
 
-    /* Home Page */
+/* footer section */
+footer {
+    max-width:75%;
+    margin: 0 auto;
+}
+.footerBzInfo{
+    align-content: center;
+    align-items: center;
+    padding: 0.2em;
+}
 
+#prefootMid {    
+    justify-content: space-evenly;
+    align-self: center;
+    padding: 25px;
+}
+
+.iconLinks {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+}
+#midfootMid a {   
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 25px;
+}
+#prefootMid div {
+    align-self: center;
+}
+#map iframe {
+    width: 400px;
+    height: 300px;
+}
+
+
+
+
+/**************
+*  
+* Home Page
+*
+***************/
 #mainWelcome {
     flex-flow: row;
     margin-top: 5em;    
@@ -94,7 +135,7 @@
 }
 .templeInfoContainer {
     max-width: 50%;
-    margin: 5em auto 0 auto;
+    margin: 5em auto 1em auto;
     background-color: #d1d5d8;
     padding: 2em;
     border-radius: 0.2em;
@@ -135,42 +176,47 @@
     margin-left: -1em;
 }
 
-
-/* footer section */
-footer {
-    max-width:75%;
-    margin: 0 auto;
-}
-.footerBzInfo{
-    align-content: center;
-    align-items: center;
-    padding: 0.2em;
+/**************
+*  
+* Temple Page
+*
+***************/
+#smallViewBtoTop {
+    display: none;
 }
 
-#prefootMid {    
-    justify-content: space-evenly;
-    align-self: center;
-    padding: 25px;
+/**************
+*  
+* Reservation Page
+*
+***************/
+
+
+
+
+/**************
+*  
+* Contact Page
+*
+***************/
+.containerContact{
+    flex-direction: column;
 }
-#midfootMid a {   
-    flex-flow: column;
-    justify-content: space-around;
-    align-self: center;
-    padding: 25px;
+.formField{
+    flex-flow: row;
+    justify-content: center;
 }
-#prefootMid div {
-    align-self: center;
-}
-#map iframe {
+.contact-form{
     width: 400px;
-    height: 300px;
+    padding: 30px;
+}
+.input-field{
+    flex-direction: column;
+    width: 100%;
+}
+.bznssInfo{
+    flex-flow: row wrap;
+    align-self: flex-start;
 }
 
-
-
-
-
-
-
-   
 }

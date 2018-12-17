@@ -115,6 +115,8 @@
     }
     #midfootMid {
         display: flex;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
     #midfootMid a {   
         display: flex;
@@ -273,17 +275,133 @@
     color: #FFF;
     border-radius: 2%;
 }
-.mainTempleInfo h3 {
-
-}
 .clickSlideToggle:hover {
     color: #5c8301;
     cursor: pointer;
 }
+#smallViewBtoTop {
+    position: fixed;
+    border-radius: 1em;
+    background-color: rgba(92,131,1, 0.5);
+    padding: 0.5em 1em;
+}
+
+/**************
+*  
+* Reservation Page
+*
+***************/
+#reservationBackground {
+    background-image: url("../images/reservations/reservationBackground.jpg");
+    background-color: #ccc;
+    background-position:center;
+	background-repeat:no-repeat;
+    background-size:cover; 
+    width:100%;
+}
 
 
+/**************
+*  
+* Contact Page
+*
+***************/
+.containerContact{
+    display: flex;
+    width: 100%;
+    background-color: #d1d5d8;
+    margin-bottom: -5em;
+    padding-bottom: 2em;
+}
+#contactHeader {
+    margin: 1.5em auto;
+    text-align: center;
+}
+.formField{
+    display: flex;
+}
+.formField .contact-form, .formField .bznssInfo{
+    margin: 2em;
+}
+.contact-form{
+    background: rgba(31,31,31,0.9);
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px;
+}
+input::placeholder {
+    color: rgba(209,213,216,0.7);
+}
+.input-field{
+    display: flex;
+}
+.input-field .input, .message textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid rgba(92,131,1, 0.8);
+    padding: 10px;
+    color: rgba(209,213,216,0.7);
+}
+.subjArea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid rgba(92,131,1, 0.8);
+    padding: 5px;
+    color: rgba(209,213,216,0.7);
+}
+.message textarea{
+    height: 100px;
+    width: 100%;
+}
+.btn {
+    background: rgba(92,131,1, 0.8);
+    width: 80%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: rgba(209,213,216,0.7);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.btn:hover {
+    background-color: #9ee200;
+    color: #0B0B0B;
+}
+.bznssInfo{
+    display: flex;
+    margin-left: 4em;
+}
 
+input:not([type="submit"]):valid:focus,
+textarea:valid:focus {
+    box-shadow: 0 0 10px rgba(101, 169, 10, 0.8);   
+    outline: 0;
+}
+input:not([type="submit"]):invalid:focus,
+textarea:invalid:focus {
+    box-shadow: 0 0 10px rgba(204, 63, 133, 0.8);   
+    outline: 0;
+}
 
+input[type="text"]#name:focus:invalid ~ #nameLbl:before {
+    content: "Please enter your name!";
+    color: #827576;
+    font-size: 0.8em;
+}
+input:focus:valid ~ #nameLbl:before {
+    content: "Great, thank you!";
+    color: rgba(228, 241, 254, 0.8);
+    font-size: 0.8em;
+}
+.subjOpt {
+    color: #827576;
+}
 
+#contactFooterDiv {
+    margin-top: 0;
+    background-color: #d1d5d8;
+}
 
   

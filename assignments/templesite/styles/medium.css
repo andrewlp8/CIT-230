@@ -13,6 +13,11 @@
     .headerRight {
         font-size: 1.8em;
     }
+    .stickIt {
+        position: relative;
+        top: 0;
+        z-index: 5;
+    }
 
 /* Navigation */
     nav button { display: block;
@@ -116,7 +121,7 @@ footer {
     background-color: #9ee200;
     color: #0B0B0B;
 }
-#bookNowBtn {
+.bookNowBtn {
     display: block;
     width: 100%;
 }
@@ -153,6 +158,7 @@ footer {
     flex-flow: row wrap;
     max-width: 90%;
     margin: 1em;
+    justify-content: center;
 }
 /* amenities info section */
 .amenitiesHome {
@@ -161,4 +167,63 @@ footer {
     margin: 1em;
     align-self: center;
 }
+
+
+/**************
+*  
+* Temple Page
+*
+***************/
+.templeTop {
+    margin-top: 3em;
+}
+.templeBottom {
+    margin-bottom: 3em;
+}
+.indTempImg, .indTempImg > div {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+#smallViewBtoTop {
+    display: block;
+    bottom: 0.5em;
+    right: 1.5em;
+}
+
+
+/**************
+*  
+* Contact Page
+*
+***************/
+.containerContact{
+    flex-direction: column;
+    
+}
+.formField{
+    flex-flow: column;
+    justify-content: center;
+    align-self: center;
+}
+.contact-form{
+    width: 400px;
+    padding: 10px;
+}
+.input-field{
+    flex-direction: column;
+    width: 100%;
+}
+.input-field input {
+    width: 350px;
+}
+.bznssInfo{
+    flex-flow: row wrap;
+    align-self: center;
+}
+
+
+
+
 }

@@ -35,13 +35,100 @@
                         <li ><a href="temple.html">Temple</a></li>
                         <li ><a href="reservation.html">Reservation</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li class="active"><a id="endNav" href="contact.html">Contact</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
         </div>
+
+        <div class="containerContact">
+            <div id="contactHeader">
+                <h2>Contact Us</h2>
+                <h3>Have questions, concerns, or suggestions?</h3>
+                <p>Call us, or send us your information and we will be sure to respond promptly!</p>    
+            </div>
+                
+                <div class="formField">
+                        <div class="contact-form" >
+                            <form action="#" method="post">
+                                    <div class="input-field">
+                                        
+                                            <input id="name" type="text" class="input" placeholder="Name" required>
+                                            
+                                            <label id="nameLbl" for="name"></label>
+                                            <label id="emailLbl" for="email"></label>
+                                            <input id="email" type="email" class="input" placeholder="Email Address" required>
+                                            
+                                            <input type="tel" class="input" placeholder="Phone" >
             
+                                            <select name="subject" id="messageSubject" class="subjArea">
+                                                <option class="subjArea" disabled selected value  >Subject - Please choose</option>
+                                                <option class="subjOpt" value="question">I have a question</option>
+                                                <option class="subjOpt" value="suggestion">I have a suggestion</option>
+                                                <option class="subjOpt" value="reservation">I want to make a reservation</option>
+                                                <option class="subjOpt" value="concern">I have some concerns</option>
+                                                <option class="subjOpt" value="cancellation">I need to cancel my reservation</option>
+                                                <option class="subjOpt" value="other">Other...</option>
+                                            </select>
+                                            <div class="message">
+                                                 <textarea placeholder="Message"></textarea>
+                                                 <div class="btn">Contact Temple Inn and Suites</div>
+                                             </div>
+                                        </div>
+                            </form>
+                                
+                            </div>
+                             
+                            <div class="bznssInfo">
+                                <img id="contactLogo" src="images/icons/logo.png" alt="Temple Inn Logo">
 
-
+                            </div>
+                </div>
+               
+        </div>
+            
+<div id="contactFooterDiv">
+        <footer>
+                <div id="preFooter">
+                    <div id="prefootMid">
+    
+                        <div id="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.409032436697!2d-77.09900308425124!3d38.983160179557466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97c9d6d973d%3A0xb64f1e3725476c15!2s4810+Montgomery+Ln+%23500%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1544482533359" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+    
+                        <div id="bottomfooterinfo">
+    
+                            <h4>Temple Inn & Suites</h4>
+    
+                            <address>
+                                <div class="footerBzInfo">
+                                    <div>
+                                        <img src="images/icons/location.png" alt="location icon"> 
+                                    </div>
+                                    <div>
+                                        <p>4810 Montgomery Ln #500, Bethseda, MD 20814</p>
+                                    </div>
+                                </div>
+                            </address>
+                
+                            <div class="footerBzInfo">
+                                <img src="images/icons/phone.png" alt="phone icon"><a href="tel:999-999-9999">999.999.9999</a>
+                            </div>
+    
+                            <div class="footerBzInfo">
+                                <img src="images/icons/mail.png" alt="mail icon"><a href="mailto:templeinnsuites@tis.com">templeinnsuites@tis.com</a>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                        <div id="midfootMid">
+                            <div class="iconLinks">
+                                <a href="https://www.facebook.com"><img src="images/icons/fb.png" alt="facebook icon"></a>
+                                <a href="pinterest.com"><img src="images/icons/pinterest.png" alt="pinterest icon"></a>
+                                <a href="twitter.com"><img src="images/icons/twitter.png" alt="twitter icon"></a>  
+                            </div>      
+                        </div>          
+                </div>
         <div class="bottomFooter">
             <div>
                 <p>&copy;2020 Temple Inn & Suites | Attributions | Andrew Peteren</p>
@@ -55,6 +142,7 @@
         </div>
         
     </footer>
+</div>
     <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
 
