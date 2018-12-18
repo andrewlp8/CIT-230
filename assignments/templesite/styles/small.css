@@ -66,6 +66,12 @@
         color: #0b0b0b;
     }
 
+    /* Page Title */
+    .pageTitle {
+        font-size: 2em;
+    }
+
+
 /* Footer */
 footer {
     max-width:100%;
@@ -186,10 +192,12 @@ footer {
 ***************/
 /* Form Container */
 .containerReservation {
+    width: 100%;
     display: flex;
     flex-flow: column;
 }
 #reservationTitle {
+    width: 100%;
     align-self: center;
 }
 .containerReservation > div {

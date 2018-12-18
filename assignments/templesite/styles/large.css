@@ -12,6 +12,10 @@
 .headerRight {
     font-size: 2.2em;
 }
+/* Page Title */
+.pageTitle {
+    font-size: 3em;
+}
     /* Navigation */
  nav button { display: none; }
  .active {

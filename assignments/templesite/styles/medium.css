@@ -65,6 +65,10 @@
         border-radius: 1em 1em 0 0;
         color: #0b0b0b;
     }
+    /* Page Title */
+    .pageTitle {
+        font-size: 2.5em;
+    }
 
 /* Footer */
 footer {
@@ -194,10 +198,12 @@ footer {
 ***************/
 /* Form Container */
 .containerReservation {
+    width: 100%;
     display: flex;
     flex-flow: column;
 }
 #reservationTitle {
+    width: 100%;
     align-self: center;
 }
 .containerReservation > div {

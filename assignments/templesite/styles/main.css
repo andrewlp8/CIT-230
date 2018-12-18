@@ -84,6 +84,17 @@
         color: #527500;
     }
 
+    /* Page Title */
+    .pageTitle {
+        text-align: center;
+        padding-top: 0.2em;
+        margin-top: 1em;
+        font-style: italic;
+        -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+            -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+                    box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    }
+
     /* footer section */
     #prefootMid img:hover {
         box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
@@ -307,14 +318,7 @@
 *
 ***************/
 /* Services Main Section */
-.pageTitle {
-    text-align: center;
-    font-size: 3em;
-    font-style: italic;
-    -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
-        -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
-                box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
-}
+
 #servicesMain {
     display: flex;
     flex-flow: row wrap;
