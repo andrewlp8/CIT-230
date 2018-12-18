@@ -281,6 +281,14 @@ footer {
 }
 
 
+/**************
+*  
+* Resources Page
+*
+***************/
+#resourcesContainer {
+    max-width: 85%;
+}
 
 
 }

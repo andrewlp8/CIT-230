@@ -269,4 +269,13 @@ footer {
     align-self: flex-start;
 }
 
+
+/**************
+*  
+* Resources Page
+*
+***************/
+#resourcesContainer {
+    max-width: 75%;
+}
 }

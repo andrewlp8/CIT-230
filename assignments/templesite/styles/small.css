@@ -266,4 +266,14 @@ footer {
     align-self: center;
 }
 
+
+/**************
+*  
+* Resources Page
+*
+***************/
+#resourcesContainer {
+    max-width: 90%;
+}
+
 }

@@ -136,7 +136,12 @@
         -moz-box-shadow: 0 -6px 6px 0 rgb(53, 53, 53);
         box-shadow: 0 -6px 6px 0 rgb(53, 53, 53);
     }
-
+    .bottomFooter a {
+        color: #527500;
+    }
+    .bottomFooter a:hover {
+        color: #a5ec00;
+    }
 
     /**************
     *  
@@ -232,7 +237,7 @@
 
 
 
-     /**************
+    /**************
     *  
     * Temple Page
     *
@@ -298,6 +303,60 @@
 
 /**************
 *  
+* Services Page
+*
+***************/
+/* Services Main Section */
+.pageTitle {
+    text-align: center;
+    font-size: 3em;
+    font-style: italic;
+    -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+        -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+                box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+}
+#servicesMain {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.servicesInfoContainer {
+    background-color: #d1d5d8;
+    width: 375px;
+    padding: 2em;
+    border-radius: 0.2em;
+    color: #1f1f1f;
+    margin: 2em;
+    -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+}
+.servicesInfoContainer img {
+    border-radius: 2%;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+}
+.servicesInfoContainer li {
+    padding: 0.38em 0;
+    list-style: none; 
+}
+.servicesInfoContainer li:before {
+    content: "\2022";
+    color: #5c8301;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+
+
+/**************
+*  
 * Reservation Page
 *
 ***************/
@@ -359,12 +418,6 @@ input[type=date]::-webkit-outer-spin-button {
 .reservationForm .subjOpt {
     color: #1f1f1f;
 }
-
-
-
-
-
-
 
 
 
@@ -471,4 +524,18 @@ input:focus:valid ~ #nameLbl:before {
     background-color: #d1d5d8;
 }
 
-  
+
+/**************
+*  
+* Resources Page
+*
+***************/
+#resourcesContainer {
+    margin: 1em auto;
+}
+#resourcesContainer a {
+    color: #334901;
+}
+#resourcesContainer a:hover {
+    color: #5c8301;
+}
