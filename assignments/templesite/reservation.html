@@ -42,77 +42,103 @@
 
 
         <div class="containerReservation">
-                <h2 id="reservatoinTitle">Make a Reservation</h2>
-                   
-                    <div class="formField">
-                            <div class="contact-form">
-                                <form action="#" method="get">
-                                    <div class="input-field">
-                                            
-                                        <!-- full name  -->
-                                        <input id="name" type="text" name="fullname" class="input" placeholder="Name" pattern="[A-Za-z, ' ']{5,}"  minlength=5 required>
-                                        <label id="nameLbl" for="name"></label>
-    
-                                        <!-- email  -->
-                                        <label id="emailLbl" for="email"></label>
-                                        <input id="email" type="email" class="input" name="email" placeholder="Email: xxxxx@xxxx.xxx" required>
-                                        
-                                        <!-- phone number  -->
-                                        <input type="tel" class="input" name="phone" placeholder="Phone: 888-888-8888" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
-    
-                                        <!-- Zipcode  -->
-                                        <input id="zipcode" type="number" name="zipcode" class="input" placeholder="Zipcode" min="10000" max="99999" required>
-                                        
-                                        <!-- Storm Date -->
-                                        <label id="dateLbl">Date</label>
-                                        <input id="date" name="date" type="date" class="input" >
+
+            <div id="reservationTitle"> 
+                <h2 >Make a Reservation</h2>
+            </div>
+                                
+
+            <div class="reservationFormWrapper">
+                <form class="reservationForm" action="#" method="get">
+                    <div id="reservationInputTop">
+
+                        <div id="upperUpper">
+                            <!-- location -->
+                            <div id="locationReservation">
+                                <label id="locationLbl">Location </label>
+                                <select name="region" id="stormRegion" class="regionArea">
+                                    <option class="regArea" disabled selected value>Select a location...</option>
+                                    <option class="regOpt" value="Preston">Copenhagen Denmark</option>
+                                    <option class="regOpt" value="sodaSprings" >Johanesburg South Africa</option>
+                                    <option class="regOpt" value="fishHaven" >Las Vegas Nevada</option>
+                                    <option class="regOpt" value="fishHaven" >Portland Oregon</option>
+                                </select>
+                            </div>
+
+                            <!-- date -->
+                            <div id="checkIn">
+                                <label id="dateLbl">Check in: </label>
+                                <input id="date" name="date" type="date" class="input" >
+                            </div>
+                            <div id="checkOut">
+                                <label id="dateLbl">Check out: </label>
+                                <input id="date" name="date" type="date" class="input" >
+                            </div>
+
+                            <!-- number and types of rooms -->
+                            <div id="roomsReservation">
+                                <label id="dateLbl">Room Type </label>
+                                <input list="stormType" class="typeArea" placeholder="Please Select">
+                                <datalist id="stormType"  >
+                                    <option class="typeOpt" value="Honeymoon Suite"></option>
+                                    <option class="typeOpt" value="King" ></option>
+                                    <option class="typeOpt" value="Queen" ></option>
+                                    <option class="typeOpt" value="Single"></option>
+                                    <option class="typeOpt" value="Double"></option>
+                                </datalist>
+                            </div>
+                        </div>
+                        
+                        <div id="lowerUpper">
+                            <!-- full name -->
+                            <div id="nameReservation">
+                                    <label id="nameLbl" for="name">Full Name</label>
+                                <input id="name" type="text" name="fullname" class="input" placeholder="John Doe" pattern="[A-Za-z, ' ']{5,}"  minlength=5 required>
+                                
+                            </div>
                             
-                                        <!-- Storm Type -->
-                                        <input list="stormType" class="typeArea" placeholder="Storm Type">
-                                        <datalist id="stormType"  >
-                                            <option class="typeOpt" value="Flash Flood"></option>
-                                            <option class="typeOpt" value="Hail" ></option>
-                                            <option class="typeOpt" value="Hurricane" ></option>
-                                            <option class="typeOpt" value="Thunderstorm"></option>
-                                            <option class="typeOpt" value="Tornadoe"></option>
-                                        </datalist>
-                                        
-                                        <!-- Storm Severity -->
-                                        <div id="stormSev">
-                                            <label id="severity" >Storm Severity<br>(10 being Most Severe)</label><br>
-                                            <input type="range" min="0" max="10" value="0" name="percentage">
-                                        </div>
-                                        
-                                        <!-- Storm region -->
-                                        <select name="region" id="stormRegion" class="regionArea">
-                                            <option class="regArea" disabled selected value>Select a region...</option>
-                                            <option class="regOpt" value="Preston">Preston</option>
-                                            <option class="regOpt" value="sodaSprings" >Soda Springs</option>
-                                            <option class="regOpt" value="fishHaven" >Fish Haven</option>
-                                        </select>
+                            <!-- email -->
+                            <div id="emailReservation">
+
+                                <label id="emailLbl" for="email">email</label>
+                                <input id="email" type="email" class="input" name="email" placeholder="email@yourmail.com" required>
+                            </div>
     
-                                        <!-- Danger Level -->
-                                        <div id="danger">
-                                            <label id="radioLbl">Is it at a dangerous level?</label><br>
-                                            <input type="radio" name="danger" value="yes" checked> Yes<br>
-                                            <input type="radio" name="danger" value="maybe"> Maybe<br>
-                                            <input type="radio" name="danger" value="no"> No <br>
-                                        </div>
-                                        
-                                        <!-- Additional Information -->
-                                        <div class="message">
-                                             <textarea placeholder="Additional information or comments..."></textarea>
-                                             <input type="submit" name="message" value="Send the Report" class="btn" onclick="thanks()" >
-                                        </div>
-    
-                                        
-                                    </div>
-                                </form> 
-                                </div>
-                                 
+                            <!-- phone -->
+                            <div id="phoneReservation">
+                                    <label id="nameLbl" for="name">Phone</label>
+                                <input type="tel" class="input" name="phone" placeholder="999-999-9999" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+                            </div>
+                            
+                            <!-- home state or country -->
+                            <div id="homeReservation">
+                                    <label id="nameLbl" for="name">Home State or Country</label>
+                                <input id="zipcode" name="zipcode" class="input" required>
+                            </div>
+                        </div>
+                        
+                        
+                        
                     </div>
                    
-                </div>
+                    <!-- Special accomodations / comments -->
+                    <div class="messageReservation">
+                        <div>
+                            <label id="nameLbl" for="name">Special Accomodations / Comments</label>
+                            <textarea placeholder="Enter text here..."></textarea>
+                        </div>
+                        
+                        <div>
+                            <input  type="submit" name="message" value="Make my Reservation!" class="btn" onclick="thanks()" >
+                        </div>
+                        
+                    </div>
+                    
+                </form> 
+            </div>
+
+
+        </div>
 
        
 

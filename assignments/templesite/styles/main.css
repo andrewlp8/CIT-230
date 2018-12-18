@@ -282,9 +282,19 @@
 #smallViewBtoTop {
     position: fixed;
     border-radius: 1em;
+    display: block;
+    bottom: 0.5em;
+    right: 1.5em;
+    border: none;
     background-color: rgba(92,131,1, 0.5);
     padding: 0.5em 1em;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+            box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
 }
+#smallViewBtoTop:focus {outline:0;}
+
 
 /**************
 *  
@@ -299,6 +309,63 @@
     background-size:cover; 
     width:100%;
 }
+/* Form Title */
+#reservationTitle {
+    color: rgb(255,254,254);
+}
+
+/* Form Container */
+.reservationFormWrapper {
+    background: rgba(255,254,254, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+}
+/* Form Content */
+#upperUpper, #lowerUpper {
+    display: flex;
+}
+#upperUpper > div, #lowerUpper > div {
+    justify-content: space-evenly;
+    margin-right: 1.5em;
+}
+/* Form Inputs */
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.reservationForm input::placeholder {
+    color: #666666;
+}
+.reservationForm .input-field .input, .reservationForm .message textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid rgba(92,131,1, 0.8);
+    padding: 10px;
+    color: #1f1f1f;
+}
+.reservationForm .subjArea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid rgba(92,131,1, 0.8);
+    padding: 5px;
+    color: #1f1f1f;
+}
+.reservationForm .messageReservation {
+    display: flex;
+    margin: 1em;
+}
+.reservationForm .subjOpt {
+    color: #1f1f1f;
+}
+
+
+
+
+
+
+
 
 
 /**************

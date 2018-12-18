@@ -178,12 +178,68 @@ footer {
 .templeBottom {
     margin-bottom: 3em;
 }
-#smallViewBtoTop {
-    display: block;
-    bottom: 0.5em;
-    right: 1.5em;
-}
 
+/**************
+*  
+* Reservation Page
+*
+***************/
+/* Form Container */
+.containerReservation {
+    display: flex;
+    flex-flow: column;
+}
+#reservationTitle {
+    align-self: center;
+}
+.containerReservation > div {
+    justify-content: center;
+    align-items: center;
+}
+.reservationFormWrapper {
+    display: flex; 
+    justify-content: center;
+    align-self: center;
+    max-width: 400px;
+}
+.reservationForm {
+    margin: 1em;
+    justify-content: center;
+    align-content: center;
+}
+/* Form Content */
+#reservationInputTop > div > div {
+    margin: 1em;
+}
+#reservationInputTop {
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+#upperUpper, #lowerUpper {
+    flex-flow: column;
+    justify-content: space-around;
+}
+#upperUpper > div, #lowerUpper > div {
+    justify-content: space-evenly;
+    margin-right: 1.5em;
+}
+#upperUpper > div label, #lowerUpper > div label {
+    display: block;
+}
+.reservationForm .messageReservation {
+    flex-flow: column;
+    width: 85%;
+}
+.reservationForm .messageReservation textarea{
+    height: 200px;
+    width: 100%;
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid rgba(92,131,1, 0.8);
+    padding: 10px;
+    color: #1f1f1f;
+}
 
 /**************
 *  
