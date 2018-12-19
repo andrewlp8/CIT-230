@@ -1,563 +1,605 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>Temples</title>
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
-        <link rel="stylesheet" type="text/css" href="styles/small.css">
-        <link rel="stylesheet" type="text/css" href="styles/medium.css">
-        <link rel="stylesheet" type="text/css" href="styles/large.css">
-        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Temples</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/large.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+</head>
 
-    <body>
-        <div class="stickIt">
-            <header>
-            
-                    <div class="headerLeft">
-                        <a href="index.html"><img id="siteLogo" src="images/icons/logo.png" alt="Temple Inn and Suites"></a> 
-                    </div>
-        
-                    <div class="headerRight">
-                        <a href="tel:999-999-9999">999.999.9999</a>
-                    </div>
-        
-                </header>
-                
-                <nav>
-                    <button onclick="toggleMenu()">&#9776; Menu</button> 
+<body>
+    <div class="stickIt">
+        <header>
 
-                    <ul id="primaryNav" class="navigation hide"> 
-                        <li ><a href="index.html">Home</a></li>
-                        <li class="active"><a href="temple.html">Temple</a></li>
-                        <li><a href="reservation.html">Reservation</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a id="endNav" href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-        </div>
-            <h1 class="pageTitle">Temples</h1>
-        <!-- Las Vegas Nevada Temple -->
-        <div class="templeInfoContainer templeTop">
-
-                <div class="indTempImg">
-                    <div>
-                        <h2 class="titleWeather" id="temple3Title">Las Vegas Nevada Temple</h2>
-                        <img src="images/temples/las_vegas_temple_lds_opt.jpg" alt="Las Vegas Temple">
-                    </div>
-                    <section  class="weatherSumBox">
-                            <div class="weatherDetails">
-                                <h3>Weather Summary</h3><hr>
-                                <div class="wImageDiv">
-                                        <div id="wImageVegas"></div>
-                                        
-                                </div>
-                                <div class="weatherInfoLine">
-                                    <p class="label">Currently:</p>
-                                    <p class="value" id="imgDescriptionVegas"></p>
-                                </div>
-                                
-                                <div class="weatherInfoLine">
-                                    <p class="label" >Temperature: </p>
-                                    <p class="value" id="curTempVegas"></p>
-                                </div>
-        
-                                <div class="weatherInfoLine">
-                                    <p class="label">Humidity:</p>
-                                    <p class="value" id="humidityVegas"></p>
-                                </div>
-        
-                                <div class="weatherInfoLine">
-                                    <p class="label">Precipitation:</p>
-                                    <p class="value" id="precipitationVegas"></p>
-                                </div>
-        
-                                <div class="weatherInfoLine">
-                                    <p class="label">Wind Speed:</p>
-                                    <p class="value" id="windVegas"></p>
-                                </div>
-        
-                                <div class="weatherInfoLine">
-                                    <p class="label">Wind chill:</p>
-                                    <p class="value" id="windChillVegas"></p>
-                                </div>
-        
-                            </div>
-    
-                            
-                    </section>
-                </div>
-    
-    
-                <div class="templeTextContainer">
-                        <h4>Click on any of the options below for more information:</h4>
-                        <div class="mainTempleInfo">
-                                <h3 class="clickSlideToggle" id="mainInfoClickVegas">Contact Info</h3><hr>
-                                <div id="mainInfoSlideVegas">
-                                        <div class="templeInfoContainerBox">
-                                            <h3>Address</h3>
-                                            <p>827 Temple View Dr Las Vegas NV 89110-2920 United States</p>
-                                        </div>
-                                        <div class="templeInfoContainerBox">
-                                            <h3>Telephone</h3>
-                                            <p>(1) 702-452-5011</p>
-                                        </div>
-                                </div>
-                            
-                                <h3 class="clickSlideToggle" id="servicesClickVegas">Services and Schedules</h3><hr>
-                                <div id="servicesSlideVegas">
-                                    <div class="templeInfoContainerBox">
-                                        <h3>Services</h3>
-                                        <p>Clothing rental available</p>
-                                        <p>Cafeteria available</p>
-                                        <p>No patron housing available</p>
-                                        <p>Distribution center nearby</p>
-                                    </div>
-                        
-                                    <div class="templeInfoContainerBox">
-                                        <h3>Ordinance Schedule</h3>
-                                        <p>For schedule information, please call the temple.</p>
-                                    </div>
-                                    
-                                    <div class="templeInfoContainerBox">
-                                        <h3>Session Schedule</h3>
-                                        <p>For schedule information, please call the temple.</p>
-                                    </div>
-                        
-                                </div>
-                            
-                                <h3 class="clickSlideToggle" id="closuresClickVegas">Temple Closures</h3><hr>
-                                <div id="closuresSlideVegas">
-                                    <div class="closures templeInfoContainerBox">
-                                        <h3>Closures</h3>
-                                        <div id="lvNevadaClosures"></div>
-                                    </div>
-                                </div>
-                        
-                                <h3 class="clickSlideToggle" id="summaryClickVegas">Temple History</h3><hr>
-                                <div id="summarySlideVegas">
-                                        <div class="templeInfoContainerBox">
-                                                <h3>History</h3>
-                                                <p>April 7, 1984 - Announced</p>
-                                                <p>November 30, 1985 - Groundbreaking</p>
-                                                <p>December 16, 1989 - Dedication</p>
-                                        </div>
-                        
-                                        <div class="templeInfoContainerBox">
-                                            <h3>Summary</h3>
-                                            <p>Plans to construct the temple were announced 7 April 1984, Church leaders broke ground 30 November 1985, and President Gordon B. Hinckley, then a member of the First Presidency of The Church of Jesus Christ of Latter-day Saints, dedicated the Las Vegas Nevada Temple 16 December 1989. The temple serves Latter-day Saints in southern Nevada and parts of Arizona and California.</p>    
-                                            <p>The 80,350-square-foot temple’s exterior is white precast stone walls and copper roof and detailing.</p>
-                                        <p>Reference - https://www.mormonnewsroom.org/article/las-vegas-nevada-temple</p>
-                                        </div>
-                                </div>
-                        
-                        </div>
-                        
-                        
-                        </div>
-        </div>
-        
-        <!-- Copenhagen Temple -->
-        <div class="templeInfoContainer">
-
-            <div class="indTempImg">
-                <div >
-                    <h2 class="titleWeather" id="temple1Title">Copenhagen Denmark Temple</h2>
-                    <img src="images/temples/copenhagen_denmark_temple_lds_opt.jpg" alt="Copenhagen Temple">
-                </div>
-                
-                <section  class="weatherSumBox">
-                        <div class="weatherDetails">
-                            <h3>Weather Summary</h3><hr>
-
-                            <div class="wImageDiv">
-                                <div id="wImageCopen"></div>          
-                            </div>
-
-                            <div class="weatherInfoLine">
-                                <p class="label">Currently:</p>
-                                <p class="value" id="imgDescriptionCopen"></p>
-                            </div>
-                            
-                            <div class="weatherInfoLine">
-                                <p class="label" >Temperature: </p>
-                                <p class="value" id="curTempCopen"></p>
-                            </div>
-    
-                            <div class="weatherInfoLine">
-                                <p class="label">Humidity:</p>
-                                <p class="value" id="humidityCopen"></p>
-                            </div>
-    
-                            <div class="weatherInfoLine">
-                                <p class="label">Precipitation:</p>
-                                <p class="value" id="precipitationCopen"></p>
-                            </div>
-    
-                            <div class="weatherInfoLine">
-                                <p class="label">Wind Speed:</p>
-                                <p class="value" id="windCopen"></p>
-                            </div>
-    
-                            <div class="weatherInfoLine">
-                                <p class="label">Wind chill:</p>
-                                <p class="value" id="windChillCopen"></p>
-                            </div>
-    
-                        </div> 
-                </section>
+            <div class="headerLeft">
+                <a href="index.html"><img id="siteLogo" src="images/icons/logo.png" alt="Temple Inn and Suites"></a>
             </div>
 
-            <div class="templeTextContainer">
+            <div class="headerRight">
+                <a href="tel:999-999-9999">999.999.9999</a>
+            </div>
+
+        </header>
+
+        <nav>
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+
+            <ul id="primaryNav" class="navigation hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="temple.html">Temple</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a id="endNav" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1 class="pageTitle">Temples</h1>
+    <!-- Las Vegas Nevada Temple -->
+    <div class="templeInfoContainer templeTop">
+
+        <div class="indTempImg">
+            <div>
+                <h2 class="titleWeather" id="temple3Title">Las Vegas Nevada Temple</h2>
+                <img src="images/temples/las_vegas_temple_lds_opt.jpg" alt="Las Vegas Temple">
+            </div>
+            <section class="weatherSumBox">
+                <div class="weatherDetails">
+                    <h3>Weather Summary</h3>
+                    <hr>
+                    <div class="wImageDiv">
+                        <div id="wImageVegas"></div>
+
+                    </div>
+                    <div class="weatherInfoLine">
+                        <p class="label">Currently:</p>
+                        <p class="value" id="imgDescriptionVegas"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Temperature: </p>
+                        <p class="value" id="curTempVegas"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Humidity:</p>
+                        <p class="value" id="humidityVegas"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Precipitation:</p>
+                        <p class="value" id="precipitationVegas"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Wind Speed:</p>
+                        <p class="value" id="windVegas"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Wind chill:</p>
+                        <p class="value" id="windChillVegas"></p>
+                    </div>
+
+                </div>
+
+
+            </section>
+        </div>
+
+
+        <div class="templeTextContainer">
             <h4>Click on any of the options below for more information:</h4>
-                <div class="mainTempleInfo">
-                        <h3 class="clickSlideToggle" id="mainInfoClickCopen">Contact Info</h3><hr>
-                        <div id="mainInfoSlideCopen">
-                                <div class="templeInfoContainerBox">
-                                        <h3 >Address</h3>
-                                        <p>Priorvej 12 2000 Frederiksberg Denmark</p>
-                                </div>
-                                <div class="templeInfoContainerBox">
-                                        <h3>Telephone</h3>
-                                        <p>(45) 38-18-1818</p>
-                                </div>
-                        </div>
-                    
-                        <h3 class="clickSlideToggle" id="servicesClickCopen">Services and Schedules</h3><hr>
-                        <div id="servicesSlideCopen">
-                                <div class="templeInfoContainerBox">
-                                        <h3>Services</h3>
-                                        <p>No clothing rental available</p>
-                                        <p>No cafeteria available</p>
-                                        <p>Patron housing available</p>
-                                        <p>Distribution center nearby</p>
-                                        </div>
+            <div class="mainTempleInfo">
+                <h3 class="clickSlideToggle" id="mainInfoClickVegas">Contact Info</h3>
+                <hr>
+                <div id="mainInfoSlideVegas">
+                    <div class="templeInfoContainerBox">
+                        <h3>Address</h3>
+                        <p>827 Temple View Dr Las Vegas NV 89110-2920 United States</p>
+                    </div>
+                    <div class="templeInfoContainerBox">
+                        <h3>Telephone</h3>
+                        <p>(1) 702-452-5011</p>
+                    </div>
+                </div>
 
-                                        <div class="templeInfoContainerBox">
-                                                <h3>Ordinance Schedule</h3>
-                                                <p>For schedule information, please call the temple.</p>
-                                        </div>
-                                        
-                                        <div class="templeInfoContainerBox">
-                                                <h3>Session Schedule</h3>
-                                                <p>For schedule information, please call the temple.</p>
-                                        </div>
+                <h3 class="clickSlideToggle" id="servicesClickVegas">Services and Schedules</h3>
+                <hr>
+                <div id="servicesSlideVegas">
+                    <div class="templeInfoContainerBox">
+                        <h3>Services</h3>
+                        <p>Clothing rental available</p>
+                        <p>Cafeteria available</p>
+                        <p>No patron housing available</p>
+                        <p>Distribution center nearby</p>
+                    </div>
 
-                        </div>
-                    
-                        <h3 class="clickSlideToggle" id="closuresClickCopen">Temple Closures</h3><hr>
-                        <div id="closuresSlideCopen">
-                                <div class="closures templeInfoContainerBox">
-                                        <h3>Closures</h3>
-                                        <div id="copenhagenClosures"></div>
-                                    </div>
-                        </div>
+                    <div class="templeInfoContainerBox">
+                        <h3>Ordinance Schedule</h3>
+                        <p>For schedule information, please call the temple.</p>
+                    </div>
 
-                        <h3 class="clickSlideToggle" id="summaryClickCopen">Temple History</h3><hr>
-                        <div id="summarySlideCopen">
-                                <div class="templeInfoContainerBox">
-                                        <h3>History</h3>
-                                        <p>March 17, 1999 - Announced</p>
-                                        <p>April 24, 1999 - Groundbreaking</p>
-                                        <p>May 23, 2004</p>
-                                </div>
-                                <div class="templeInfoContainerBox">
-                                        <h3>Summary</h3>
-                                        <p>Originally dedicated as the Priorvej chapel near the heart of Copenhagen, Denmark, in 1931, this beautiful redbrick edifice became the 118th temple of the Church when it was dedicated as such on May 23, 2004. It was described as “a new temple in an old shell."</p>
-                                        <p>The original exterior—including a façade with impressive columns flanking the wooden door—was preserved and restored while the interior went through extensive reconstruction. Murals and paintings of scenes from local landscapes exemplify the temple’s distinctively Danish and Swedish influences. Five tall windows made of art glass run along each side of the building, which has a unique roof made of copper with a copper-clad dome.</p>
-                                        <p>At the temple dedication President Hinckley prayed that Heavenly Father would “touch the hearts of all who serve herein with an understanding of Thy divine purposes and of Thy glorious work in bringing ‘to pass the immortality and eternal life of man’” (Moses 1:39)</p>
-                                        <p>This meetinghouse, built by members, was dedicated in 1931 and later used as a bomb shelter during World War II. After the building was renovated, it became the 118th temple.</p>
-                                        <p>Reference - https://www.lds.org/ensign/2010/07/small-and-simple-things/copenhagen-denmark-temple?lang=eng</p>
-                                    </div>
-                        </div>
+                    <div class="templeInfoContainerBox">
+                        <h3>Session Schedule</h3>
+                        <p>For schedule information, please call the temple.</p>
+                    </div>
 
                 </div>
 
-                
-            </div>
-        </div>
+                <h3 class="clickSlideToggle" id="closuresClickVegas">Temple Closures</h3>
+                <hr>
+                <div id="closuresSlideVegas">
+                    <div class="closures templeInfoContainerBox">
+                        <h3>Closures</h3>
+                        <div id="lvNevadaClosures"></div>
+                    </div>
+                </div>
 
-        <!-- Johannesburg South Africa Temple -->
-        <div class="templeInfoContainer">
-
-            <div class="indTempImg">
-                    <div>
-                            <h2 class="titleWeather" id="temple2Title">Johannesburg South Africa Temple</h2>
-                            <img src="images/temples/johannesburg_south_africa_temple_lds_opt.jpg" alt="Johannesburg South Africa Temple">
+                <h3 class="clickSlideToggle" id="summaryClickVegas">Temple History</h3>
+                <hr>
+                <div id="summarySlideVegas">
+                    <div class="templeInfoContainerBox">
+                        <h3>History</h3>
+                        <p>April 7, 1984 - Announced</p>
+                        <p>November 30, 1985 - Groundbreaking</p>
+                        <p>December 16, 1989 - Dedication</p>
                     </div>
 
-                    <section  class="weatherSumBox">
-                            <div class="weatherDetails">
-                                <h3>Weather Summary</h3><hr>
-                                <div class="wImageDiv">
-                                        <div id="wImageJohan"></div>
-                                        
-                                </div>
-                                <div class="weatherInfoLine">
-                                    <p class="label">Currently:</p>
-                                    <p class="value" id="imgDescriptionJohan"></p>
-                                </div>
-                                
-                                <div class="weatherInfoLine">
-                                    <p class="label" >Temperature: </p>
-                                    <p class="value" id="curTempJohan"></p>
-                                </div>
-        
-                                <div class="weatherInfoLine">
-                                    <p class="label">Humidity:</p>
-                                    <p class="value" id="humidityJohan"></p>
-                                </div>
-        
-                                <div class="weatherInfoLine">
-                                    <p class="label">Precipitation:</p>
-                                    <p class="value" id="precipitationJohan"></p>
-                                </div>
-        
-                                <div class="weatherInfoLine">
-                                    <p class="label">Wind Speed:</p>
-                                    <p class="value" id="windJohan"></p>
-                                </div>
-        
-                                <div class="weatherInfoLine">
-                                    <p class="label">Wind chill:</p>
-                                    <p class="value" id="windChillJohan"></p>
-                                </div>
-        
-                            </div>
-    
-                            
-                    </section>
-                
+                    <div class="templeInfoContainerBox">
+                        <h3>Summary</h3>
+                        <p>Plans to construct the temple were announced 7 April 1984, Church leaders broke ground 30
+                            November 1985, and President Gordon B. Hinckley, then a member of the First Presidency of
+                            The Church of Jesus Christ of Latter-day Saints, dedicated the Las Vegas Nevada Temple 16
+                            December 1989. The temple serves Latter-day Saints in southern Nevada and parts of Arizona
+                            and California.</p>
+                        <p>The 80,350-square-foot temple’s exterior is white precast stone walls and copper roof and
+                            detailing.</p>
+                        <p>Reference - https://www.mormonnewsroom.org/article/las-vegas-nevada-temple</p>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="templeTextContainer">
-                    <h4>Click on any of the options below for more information:</h4>
-                    <div class="mainTempleInfo">
-                            <h3 class="clickSlideToggle" id="mainInfoClickJohan">Contact Info</h3><hr>
-                            <div id="mainInfoSlideJohan">
-                                    <div class="templeInfoContainerBox">
-                                        <h3>Address</h3>
-                                        <p>7 Jubilee Rd Parktown Johannesburg, 2193, South Africa</p>
-                                    </div>
-                                    <div class="templeInfoContainerBox">
-                                        <h3>Telephone</h3>
-                                        <p>(27) 11-645-1540</p>
-                                    </div>
-                            </div>
-                        
-                            <h3 class="clickSlideToggle" id="servicesClickJohan">Services and Schedules</h3><hr>
-                            <div id="servicesSlideJohan">
-                                    <div class="templeInfoContainerBox">
-                                        <h3>Services</h3>
-                                        <p>Clothing rental available</p>
-                                        <p>No cafeteria available</p>
-                                        <p>Patron housing available</p>
-                                        <p>Distribution center nearby</p>
-                                    </div>
-                    
-                                    <div class="templeInfoContainerBox">
-                                            <h3>Ordinance Schedule</h3>
-                                            <p>For schedule information, please call the temple.</p>
-                                    </div>
-                                            
-                                    <div class="templeInfoContainerBox">
-                                            <h3>Session Schedule</h3>
-                                            <p>For schedule information, please call the temple.</p>
-                                    </div>
-                    
-                            </div>
-                        
-                            <h3 class="clickSlideToggle" id="closuresClickJohan">Temple Closures</h3><hr>
-                            <div id="closuresSlideJohan">
-                                    <div class="closures templeInfoContainerBox">
-                                            <h3>Closures</h3>
-                                            <div id="sAfricaClosures"></div>
-                                        </div>
-                            </div>
-                    
-                            <h3 class="clickSlideToggle" id="summaryClickJohan">Temple History</h3><hr>
-                            <div id="summarySlideJohan">
-                                    <div class="templeInfoContainerBox">
-                                            <h3>History</h3>
-                                            <p>April 1, 1981 - Announced</p>
-                                            <p>Novemeber 27, 1982 - Groundbreaking</p>
-                                            <p>August 24, 1985 - Dedicated</p>
-                                    </div>
-                                    <div class="templeInfoContainerBox">
-                                        <h3>Summary</h3>
-                                        <p>Plans to construct the temple were announced 1 April 1981, Church leaders broke ground 27 November 1982, and President Gordon B. Hinckley, then a counselor in the First Presidency of The Church of Jesus Christ of Latter-day Saints, dedicated the Johannesburg South Africa Temple 24 August 1985. The temple serves Latter-day Saints in southern Africa.</p>    
-                                    <p>Reference - https://www.mormonnewsroom.org/article/johannesburg-south-africa-temple</p>
-                                    </div>
-                            </div>
-                    
-                    </div>
-                    
-                    
-                    </div>
+
         </div>
+    </div>
 
-        <!-- Portland Oregon Temple -->
-        <div class="templeInfoContainer templeBottom">
+    <!-- Copenhagen Temple -->
+    <div class="templeInfoContainer">
 
-            <div class="indTempImg">
-                <div>
-                    <h2 class="titleWeather" id="temple4Title">Portland Oregon Temple</h2>
-                    <img src="images/temples/portland_oregon_temple_opt.jpg" alt="Portland Oregon Temple">
-                </div>
-                <section  class="weatherSumBox">
-                        <div class="weatherDetails">
-                            <h3>Weather Summary</h3><hr>
-                            <div class="wImageDiv">
-                                    <div id="wImagePort"></div>
-                                    
-                            </div>
-                            <div class="weatherInfoLine">
-                                <p class="label">Currently:</p>
-                                <p class="value" id="imgDescriptionPort"></p>
-                            </div>
-                            
-                            <div class="weatherInfoLine">
-                                <p class="label" >Temperature: </p>
-                                <p class="value" id="curTempPort"></p>
-                            </div>
-    
-                            <div class="weatherInfoLine">
-                                <p class="label">Humidity:</p>
-                                <p class="value" id="humidityPort"></p>
-                            </div>
-    
-                            <div class="weatherInfoLine">
-                                <p class="label">Precipitation:</p>
-                                <p class="value" id="precipitationPort"></p>
-                            </div>
-    
-                            <div class="weatherInfoLine">
-                                <p class="label">Wind Speed:</p>
-                                <p class="value" id="windPort"></p>
-                            </div>
-    
-                            <div class="weatherInfoLine">
-                                <p class="label">Wind chill:</p>
-                                <p class="value" id="windChillPort"></p>
-                            </div>
-    
-                        </div>
-
-                        
-                </section>
+        <div class="indTempImg">
+            <div>
+                <h2 class="titleWeather" id="temple1Title">Copenhagen Denmark Temple</h2>
+                <img src="images/temples/copenhagen_denmark_temple_lds_opt.jpg" alt="Copenhagen Temple">
             </div>
 
-            <div class="templeTextContainer">
-                <h4>Click on any of the options below for more information:</h4>
-                    <div class="mainTempleInfo">
-                            <h3 class="clickSlideToggle" id="mainInfoClickPort">Contact Info</h3><hr>
-                            <div id="mainInfoSlidePort">
-                                <div class="templeInfoContainerBox">
-                                    <h3>Address</h3>
-                                    <p>13600 Kruse Oaks Blvd Lake Oswego OR 97035-8602 United States</p>
-                                </div>
-                                <div class="templeInfoContainerBox">
-                                    <h3>Telephone</h3>
-                                    <p>(1) 503-639-7066</p>
-                                </div>
-                            </div>
-                        
-                            <h3 class="clickSlideToggle" id="servicesClickPort">Services and Schedules</h3><hr>
-                            <div id="servicesSlidePort">
-                                    <div class="templeInfoContainerBox">
-                                        <h3>Services</h3>
-                                        <p>Clothing rental available</p>
-                                        <p>Cafeteria available</p>
-                                        <p>No patron housing available</p>
-                                        <p>Distribution center nearby</p>
-                                    </div>
-                
-                                    <div class="templeInfoContainerBox">
-                                        <h3>Ordinance Schedule</h3>
-                                        <p>For schedule information, please call the temple.</p>
-                                    </div>
-                                    
-                                    <div class="templeInfoContainerBox">
-                                        <h3>Session Schedule</h3>
-                                        <p>For schedule information, please call the temple.</p>
-                                    </div>
-                
-                            </div>
-                        
-                            <h3 class="clickSlideToggle" id="closuresClickPort">Temple Closures</h3><hr>
-                            <div id="closuresSlidePort">
-                                    <div class="closures templeInfoContainerBox">
-                                            <h3>Closures</h3>
-                                            <div id="portlandClosures"></div>
-                                        </div>
-                            </div>
-                
-                            <h3 class="clickSlideToggle" id="summaryClickPort">Temple History</h3><hr>
-                            <div id="summarySlidePort">
-                                    <div class="templeInfoContainerBox">
-                                            <h3>History</h3>
-                                            <p>April 7, 1984 - Announced</p>
-                                            <p>September 20, 1986 - Groundbreaking</p>
-                                            <p>August 19, 1989 - Dedicated</p>
-                                    </div>
-                                    <div class="templeInfoContainerBox">
-                                        <h3>Summary</h3>
-                                        <p>Plans to construct the temple were announced 7 April 1984, Church leaders broke ground 20 September 1986 and President Gordon B. Hinckley, then a member of the First Presidency of The Church of Jesus Christ of Latter-day Saints, dedicated the Portland Oregon Temple 19 August 1989. The temple serves Latter-day Saints in Oregon and parts of Washington.</p>
-                                        <p>The 80,500-square-foot temple’s exterior is white marble walls and slate roof.</p>    
-                                    <p>reference - https://www.mormonnewsroom.org/article/portland-oregon-temple</p>
-                                    </div>
-                            </div>
+            <section class="weatherSumBox">
+                <div class="weatherDetails">
+                    <h3>Weather Summary</h3>
+                    <hr>
+
+                    <div class="wImageDiv">
+                        <div id="wImageCopen"></div>
                     </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Currently:</p>
+                        <p class="value" id="imgDescriptionCopen"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Temperature: </p>
+                        <p class="value" id="curTempCopen"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Humidity:</p>
+                        <p class="value" id="humidityCopen"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Precipitation:</p>
+                        <p class="value" id="precipitationCopen"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Wind Speed:</p>
+                        <p class="value" id="windCopen"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Wind chill:</p>
+                        <p class="value" id="windChillCopen"></p>
+                    </div>
+
                 </div>
+            </section>
         </div>
 
-        <button onclick="topFunction()" id="smallViewBtoTop">Back To Top</button>
-
-
-        <footer>
-                <div id="preFooter">
-                    <div id="prefootMid">
-    
-                        <div id="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.409032436697!2d-77.09900308425124!3d38.983160179557466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97c9d6d973d%3A0xb64f1e3725476c15!2s4810+Montgomery+Ln+%23500%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1544482533359" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>
-    
-                        <div id="bottomfooterinfo">
-    
-                            <h4>Temple Inn & Suites</h4>
-    
-                            <address>
-                                <div class="footerBzInfo">
-                                    <div>
-                                        <img src="images/icons/location.png" alt="location icon"> 
-                                    </div>
-                                    <div>
-                                        <p>4810 Montgomery Ln #500, Bethseda, MD 20814</p>
-                                    </div>
-                                </div>
-                            </address>
-                
-                            <div class="footerBzInfo">
-                                <img src="images/icons/phone.png" alt="phone icon"><a href="tel:999-999-9999">999.999.9999</a>
-                            </div>
-    
-                            <div class="footerBzInfo">
-                                <img src="images/icons/mail.png" alt="mail icon"><a href="mailto:templeinnsuites@tis.com">templeinnsuites@tis.com</a>
-                            </div>
-    
-                        </div>
+        <div class="templeTextContainer">
+            <h4>Click on any of the options below for more information:</h4>
+            <div class="mainTempleInfo">
+                <h3 class="clickSlideToggle" id="mainInfoClickCopen">Contact Info</h3>
+                <hr>
+                <div id="mainInfoSlideCopen">
+                    <div class="templeInfoContainerBox">
+                        <h3>Address</h3>
+                        <p>Priorvej 12 2000 Frederiksberg Denmark</p>
                     </div>
-    
-                        <div id="midfootMid">
-                            <div class="iconLinks">
-                                <a href="https://www.facebook.com"><img src="images/icons/fb.png" alt="facebook icon"></a>
-                                <a href="pinterest.com"><img src="images/icons/pinterest.png" alt="pinterest icon"></a>
-                                <a href="twitter.com"><img src="images/icons/twitter.png" alt="twitter icon"></a>  
-                            </div>      
-                        </div>          
+                    <div class="templeInfoContainerBox">
+                        <h3>Telephone</h3>
+                        <p>(45) 38-18-1818</p>
+                    </div>
                 </div>
+
+                <h3 class="clickSlideToggle" id="servicesClickCopen">Services and Schedules</h3>
+                <hr>
+                <div id="servicesSlideCopen">
+                    <div class="templeInfoContainerBox">
+                        <h3>Services</h3>
+                        <p>No clothing rental available</p>
+                        <p>No cafeteria available</p>
+                        <p>Patron housing available</p>
+                        <p>Distribution center nearby</p>
+                    </div>
+
+                    <div class="templeInfoContainerBox">
+                        <h3>Ordinance Schedule</h3>
+                        <p>For schedule information, please call the temple.</p>
+                    </div>
+
+                    <div class="templeInfoContainerBox">
+                        <h3>Session Schedule</h3>
+                        <p>For schedule information, please call the temple.</p>
+                    </div>
+
+                </div>
+
+                <h3 class="clickSlideToggle" id="closuresClickCopen">Temple Closures</h3>
+                <hr>
+                <div id="closuresSlideCopen">
+                    <div class="closures templeInfoContainerBox">
+                        <h3>Closures</h3>
+                        <div id="copenhagenClosures"></div>
+                    </div>
+                </div>
+
+                <h3 class="clickSlideToggle" id="summaryClickCopen">Temple History</h3>
+                <hr>
+                <div id="summarySlideCopen">
+                    <div class="templeInfoContainerBox">
+                        <h3>History</h3>
+                        <p>March 17, 1999 - Announced</p>
+                        <p>April 24, 1999 - Groundbreaking</p>
+                        <p>May 23, 2004</p>
+                    </div>
+                    <div class="templeInfoContainerBox">
+                        <h3>Summary</h3>
+                        <p>Originally dedicated as the Priorvej chapel near the heart of Copenhagen, Denmark, in 1931,
+                            this beautiful redbrick edifice became the 118th temple of the Church when it was dedicated
+                            as such on May 23, 2004. It was described as “a new temple in an old shell."</p>
+                        <p>The original exterior—including a façade with impressive columns flanking the wooden
+                            door—was preserved and restored while the interior went through extensive reconstruction.
+                            Murals and paintings of scenes from local landscapes exemplify the temple’s distinctively
+                            Danish and Swedish influences. Five tall windows made of art glass run along each side of
+                            the building, which has a unique roof made of copper with a copper-clad dome.</p>
+                        <p>At the temple dedication President Hinckley prayed that Heavenly Father would “touch the
+                            hearts of all who serve herein with an understanding of Thy divine purposes and of Thy
+                            glorious work in bringing ‘to pass the immortality and eternal life of man’” (Moses 1:39)</p>
+                        <p>This meetinghouse, built by members, was dedicated in 1931 and later used as a bomb shelter
+                            during World War II. After the building was renovated, it became the 118th temple.</p>
+                        <p>Reference -
+                            https://www.lds.org/ensign/2010/07/small-and-simple-things/copenhagen-denmark-temple?lang=eng</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Johannesburg South Africa Temple -->
+    <div class="templeInfoContainer">
+
+        <div class="indTempImg">
+            <div>
+                <h2 class="titleWeather" id="temple2Title">Johannesburg South Africa Temple</h2>
+                <img src="images/temples/johannesburg_south_africa_temple_lds_opt.jpg" alt="Johannesburg South Africa Temple">
+            </div>
+
+            <section class="weatherSumBox">
+                <div class="weatherDetails">
+                    <h3>Weather Summary</h3>
+                    <hr>
+                    <div class="wImageDiv">
+                        <div id="wImageJohan"></div>
+
+                    </div>
+                    <div class="weatherInfoLine">
+                        <p class="label">Currently:</p>
+                        <p class="value" id="imgDescriptionJohan"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Temperature: </p>
+                        <p class="value" id="curTempJohan"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Humidity:</p>
+                        <p class="value" id="humidityJohan"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Precipitation:</p>
+                        <p class="value" id="precipitationJohan"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Wind Speed:</p>
+                        <p class="value" id="windJohan"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Wind chill:</p>
+                        <p class="value" id="windChillJohan"></p>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+        </div>
+
+        <div class="templeTextContainer">
+            <h4>Click on any of the options below for more information:</h4>
+            <div class="mainTempleInfo">
+                <h3 class="clickSlideToggle" id="mainInfoClickJohan">Contact Info</h3>
+                <hr>
+                <div id="mainInfoSlideJohan">
+                    <div class="templeInfoContainerBox">
+                        <h3>Address</h3>
+                        <p>7 Jubilee Rd Parktown Johannesburg, 2193, South Africa</p>
+                    </div>
+                    <div class="templeInfoContainerBox">
+                        <h3>Telephone</h3>
+                        <p>(27) 11-645-1540</p>
+                    </div>
+                </div>
+
+                <h3 class="clickSlideToggle" id="servicesClickJohan">Services and Schedules</h3>
+                <hr>
+                <div id="servicesSlideJohan">
+                    <div class="templeInfoContainerBox">
+                        <h3>Services</h3>
+                        <p>Clothing rental available</p>
+                        <p>No cafeteria available</p>
+                        <p>Patron housing available</p>
+                        <p>Distribution center nearby</p>
+                    </div>
+
+                    <div class="templeInfoContainerBox">
+                        <h3>Ordinance Schedule</h3>
+                        <p>For schedule information, please call the temple.</p>
+                    </div>
+
+                    <div class="templeInfoContainerBox">
+                        <h3>Session Schedule</h3>
+                        <p>For schedule information, please call the temple.</p>
+                    </div>
+
+                </div>
+
+                <h3 class="clickSlideToggle" id="closuresClickJohan">Temple Closures</h3>
+                <hr>
+                <div id="closuresSlideJohan">
+                    <div class="closures templeInfoContainerBox">
+                        <h3>Closures</h3>
+                        <div id="sAfricaClosures"></div>
+                    </div>
+                </div>
+
+                <h3 class="clickSlideToggle" id="summaryClickJohan">Temple History</h3>
+                <hr>
+                <div id="summarySlideJohan">
+                    <div class="templeInfoContainerBox">
+                        <h3>History</h3>
+                        <p>April 1, 1981 - Announced</p>
+                        <p>Novemeber 27, 1982 - Groundbreaking</p>
+                        <p>August 24, 1985 - Dedicated</p>
+                    </div>
+                    <div class="templeInfoContainerBox">
+                        <h3>Summary</h3>
+                        <p>Plans to construct the temple were announced 1 April 1981, Church leaders broke ground 27
+                            November 1982, and President Gordon B. Hinckley, then a counselor in the First Presidency
+                            of The Church of Jesus Christ of Latter-day Saints, dedicated the Johannesburg South Africa
+                            Temple 24 August 1985. The temple serves Latter-day Saints in southern Africa.</p>
+                        <p>Reference - https://www.mormonnewsroom.org/article/johannesburg-south-africa-temple</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Portland Oregon Temple -->
+    <div class="templeInfoContainer templeBottom">
+
+        <div class="indTempImg">
+            <div>
+                <h2 class="titleWeather" id="temple4Title">Portland Oregon Temple</h2>
+                <img src="images/temples/portland_oregon_temple_opt.jpg" alt="Portland Oregon Temple">
+            </div>
+            <section class="weatherSumBox">
+                <div class="weatherDetails">
+                    <h3>Weather Summary</h3>
+                    <hr>
+                    <div class="wImageDiv">
+                        <div id="wImagePort"></div>
+
+                    </div>
+                    <div class="weatherInfoLine">
+                        <p class="label">Currently:</p>
+                        <p class="value" id="imgDescriptionPort"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Temperature: </p>
+                        <p class="value" id="curTempPort"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Humidity:</p>
+                        <p class="value" id="humidityPort"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Precipitation:</p>
+                        <p class="value" id="precipitationPort"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Wind Speed:</p>
+                        <p class="value" id="windPort"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Wind chill:</p>
+                        <p class="value" id="windChillPort"></p>
+                    </div>
+
+                </div>
+
+
+            </section>
+        </div>
+
+        <div class="templeTextContainer">
+            <h4>Click on any of the options below for more information:</h4>
+            <div class="mainTempleInfo">
+                <h3 class="clickSlideToggle" id="mainInfoClickPort">Contact Info</h3>
+                <hr>
+                <div id="mainInfoSlidePort">
+                    <div class="templeInfoContainerBox">
+                        <h3>Address</h3>
+                        <p>13600 Kruse Oaks Blvd Lake Oswego OR 97035-8602 United States</p>
+                    </div>
+                    <div class="templeInfoContainerBox">
+                        <h3>Telephone</h3>
+                        <p>(1) 503-639-7066</p>
+                    </div>
+                </div>
+
+                <h3 class="clickSlideToggle" id="servicesClickPort">Services and Schedules</h3>
+                <hr>
+                <div id="servicesSlidePort">
+                    <div class="templeInfoContainerBox">
+                        <h3>Services</h3>
+                        <p>Clothing rental available</p>
+                        <p>Cafeteria available</p>
+                        <p>No patron housing available</p>
+                        <p>Distribution center nearby</p>
+                    </div>
+
+                    <div class="templeInfoContainerBox">
+                        <h3>Ordinance Schedule</h3>
+                        <p>For schedule information, please call the temple.</p>
+                    </div>
+
+                    <div class="templeInfoContainerBox">
+                        <h3>Session Schedule</h3>
+                        <p>For schedule information, please call the temple.</p>
+                    </div>
+
+                </div>
+
+                <h3 class="clickSlideToggle" id="closuresClickPort">Temple Closures</h3>
+                <hr>
+                <div id="closuresSlidePort">
+                    <div class="closures templeInfoContainerBox">
+                        <h3>Closures</h3>
+                        <div id="portlandClosures"></div>
+                    </div>
+                </div>
+
+                <h3 class="clickSlideToggle" id="summaryClickPort">Temple History</h3>
+                <hr>
+                <div id="summarySlidePort">
+                    <div class="templeInfoContainerBox">
+                        <h3>History</h3>
+                        <p>April 7, 1984 - Announced</p>
+                        <p>September 20, 1986 - Groundbreaking</p>
+                        <p>August 19, 1989 - Dedicated</p>
+                    </div>
+                    <div class="templeInfoContainerBox">
+                        <h3>Summary</h3>
+                        <p>Plans to construct the temple were announced 7 April 1984, Church leaders broke ground 20
+                            September 1986 and President Gordon B. Hinckley, then a member of the First Presidency of
+                            The Church of Jesus Christ of Latter-day Saints, dedicated the Portland Oregon Temple 19
+                            August 1989. The temple serves Latter-day Saints in Oregon and parts of Washington.</p>
+                        <p>The 80,500-square-foot temple’s exterior is white marble walls and slate roof.</p>
+                        <p>reference - https://www.mormonnewsroom.org/article/portland-oregon-temple</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="smallViewBtoTop">Back To Top</button>
+
+
+    <footer>
+        <div id="preFooter">
+            <div id="prefootMid">
+
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.409032436697!2d-77.09900308425124!3d38.983160179557466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97c9d6d973d%3A0xb64f1e3725476c15!2s4810+Montgomery+Ln+%23500%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1544482533359"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+                <div id="bottomfooterinfo">
+
+                    <h4>Temple Inn & Suites</h4>
+
+                    <address>
+                        <div class="footerBzInfo">
+                            <div>
+                                <img src="images/icons/location.png" alt="location icon">
+                            </div>
+                            <div>
+                                <p>4810 Montgomery Ln #500, Bethseda, MD 20814</p>
+                            </div>
+                        </div>
+                    </address>
+
+                    <div class="footerBzInfo">
+                        <img src="images/icons/phone.png" alt="phone icon"><a href="tel:999-999-9999">999.999.9999</a>
+                    </div>
+
+                    <div class="footerBzInfo">
+                        <img src="images/icons/mail.png" alt="mail icon"><a href="mailto:templeinnsuites@tis.com">templeinnsuites@tis.com</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="midfootMid">
+                <div class="iconLinks">
+                    <a href="https://www.facebook.com"><img src="images/icons/fb.png" alt="facebook icon"></a>
+                    <a href="pinterest.com"><img src="images/icons/pinterest.png" alt="pinterest icon"></a>
+                    <a href="twitter.com"><img src="images/icons/twitter.png" alt="twitter icon"></a>
+                </div>
+            </div>
+        </div>
         <div class="bottomFooter">
             <div>
                 <p>&copy;2020 Temple Inn & Suites | Attributions | Andrew Peteren</p>
@@ -565,14 +607,15 @@
             <div>
                 <a href="resource.html">Resources</a>
             </div>
-            
+
             <!-- <p id="openWeatherLink"><a href="https://openweathermap.org/">Open Weather Map</a></p>
             <p id="pexelsLink"><a href="https://www.pexels.com/">Pexels Free Stock Photos</a></p>        -->
         </div>
-        
+
     </footer>
     <!-- JQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 
     <!-- My Scripts -->
     <script src="scripts/slidetoggle.js"></script>
@@ -580,8 +623,8 @@
     <script src="scripts/getTempleData.js"></script>
     <script src="scripts/togglemenu.js"></script>
     <script src="scripts/weather.js"></script>
-    </body>
+</body>
 
 
-  
+
 </html>
