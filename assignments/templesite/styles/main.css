@@ -480,18 +480,20 @@ input::placeholder {
     width: 100%;
 }
 .btn {
-    background: rgb(92,131,1);
-    width: 80%;
+    background-color: #FFFEFE;
+    max-width: 100%;
     text-align: center;
     padding: 15px;
     border-radius: 5px;
-    color: rgb(209,213,216);
+    color: rgb(92,131,1);
     cursor: pointer;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 .btn:hover {
-    background-color: #9ee200;
-    color: #0B0B0B;
+    background: rgba(92,131,1, 0.8);
+    color: #FFFEFE;
 }
 .bznssInfo{
     display: flex;
