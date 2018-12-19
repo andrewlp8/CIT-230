@@ -52,14 +52,18 @@
 
                 <form action="#" method="post">
                     <div class="input-field">
-                        <input id="name" type="text" class="input" placeholder="Name" required>
 
                         <label id="nameLbl" for="name"></label>
+                        <input id="name" name="name" type="text" class="input" placeholder="Name" required>
+
+                        
                         <label id="emailLbl" for="email"></label>
-                        <input id="email" type="email" class="input" placeholder="Email Address" required>
+                        <input id="email" name="email" type="email" class="input" placeholder="Email Address" required>
 
-                        <input type="tel" class="input" placeholder="Phone">
+                        <label for="phone"></label>
+                        <input type="tel" name="phone" class="input" placeholder="Phone">
 
+                        <label for="subject"></label>
                         <select name="subject" id="messageSubject" class="subjArea">
                             <option class="subjArea" disabled selected value>Subject - Please choose</option>
                             <option class="subjOpt" value="question">I have a question</option>
@@ -71,7 +75,8 @@
                         </select>
 
                         <div class="message">
-                            <textarea placeholder="Message"></textarea>
+                            <label for="message"></label>
+                            <textarea name="message" placeholder="Message"></textarea>
                             <div class="btn">Contact Temple Inn and Suites</div>
                         </div>
                     </div>
