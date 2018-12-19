@@ -55,34 +55,25 @@
                 <form action="#" method="post">
                     <div class="input-field">
 
-                        <label id="nameLbl" for="name">
-                            <input id="name" name="name" type="text" class="input" placeholder="Name" required>
-                        </label>
+                        
+                        <input id="name" type="text" class="input" aria-label="name" placeholder="Name" required>
 
-                        <label id="emailLbl" for="email">
-                            <input id="email" name="email" type="email" class="input" placeholder="Email Address"
-                                required>
-                        </label>
+                        <input id="email" type="email" class="input" aria-label="email" placeholder="Email Address" required>
 
-                        <label for="phone">
-                            <input type="tel" id="phone" class="input" placeholder="Phone">
-                        </label>
+                        <input type="tel" id="phone" class="input" aria-label="phone" placeholder="Phone">
 
-                        <label for="messageSubject">
-                            <select name="subject" id="messageSubject" class="subjArea">
-                                <option class="subjArea" disabled selected value>Subject - Please choose</option>
-                                <option class="subjOpt" value="question">I have a question</option>
-                                <option class="subjOpt" value="suggestion">I have a suggestion</option>
-                                <option class="subjOpt" value="reservation">I want to make a reservation</option>
-                                <option class="subjOpt" value="concern">I have some concerns</option>
-                                <option class="subjOpt" value="cancellation">I need to cancel my reservation</option>
-                                <option class="subjOpt" value="other">Other...</option>
-                            </select>
-                        </label>
+                        <select name="subject" id="messageSubject" aria-label="messageSubject" class="subjArea">
+                            <option class="subjArea" disabled selected value>Subject - Please choose</option>
+                            <option class="subjOpt" value="question">I have a question</option>
+                            <option class="subjOpt" value="suggestion">I have a suggestion</option>
+                            <option class="subjOpt" value="reservation">I want to make a reservation</option>
+                            <option class="subjOpt" value="concern">I have some concerns</option>
+                            <option class="subjOpt" value="cancellation">I need to cancel my reservation</option>
+                            <option class="subjOpt" value="other">Other...</option>
+                        </select>
+
                         <div class="message">
-                            <label for="message">
-                                <textarea id="message" placeholder="Message"></textarea>
-                            </label>
+                            <textarea id="message" aria-label="message" placeholder="Message"></textarea>
                         </div>
 
                         <div class="btn">Contact Temple Inn and Suites</div>
