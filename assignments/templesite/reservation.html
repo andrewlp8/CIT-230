@@ -17,6 +17,7 @@
 
 <body id="reservationBackground">
     <div class="stickIt">
+        <!-- Header -->
         <header>
 
             <div class="headerLeft">
@@ -28,7 +29,7 @@
             </div>
 
         </header>
-
+        <!-- Navigation -->
         <nav>
             <button onclick="toggleMenu()">&#9776; Menu</button>
 
@@ -45,11 +46,12 @@
 
     <div class="containerReservation">
 
+        <!-- Title -->
         <div id="reservationTitle">
             <h2 class="pageTitle">Make a Reservation</h2>
         </div>
 
-
+        <!-- Reservation Form -->
         <div class="reservationFormWrapper">
             <form class="reservationForm" action="#" method="get">
                 <div id="reservationInputTop">
@@ -70,11 +72,11 @@
                         <!-- date -->
                         <div id="checkIn">
                             <label id="dateInLbl">Check in: </label>
-                            <input id="dateIn" name="date" type="date" class="input">
+                            <input id="dateIn" name="date" type="date" min="2018-12-20" max="2020-12-20" class="input">
                         </div>
                         <div id="checkOut">
                             <label id="dateOutLbl">Check out: </label>
-                            <input id="dateOut" name="date" type="date" class="input">
+                            <input id="dateOut" name="date" type="date" min="2018-12-21" max="2020-12-30" class="input">
                         </div>
 
                         <!-- number and types of rooms -->
@@ -110,13 +112,13 @@
                         <!-- phone -->
                         <div id="phoneReservation">
                             <label id="phoneLbl" for="phone">Phone</label>
-                            <input type="tel" class="input" name="phone" placeholder="999-999-9999" pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                            <input type="tel" class="input" id="phone" placeholder="999-999-9999" pattern="\d{3}[\-]\d{3}[\-]\d{4}"
                                 required>
                         </div>
 
                         <!-- home state or country -->
                         <div id="homeReservation">
-                            <label id="homeLbl" for="home">Home State or Country</label>
+                            <label id="homeLbl" for="homeLoc">Home State or Country</label>
                             <input id="homeLoc" name="home" class="input" required>
                         </div>
                     </div>
@@ -129,7 +131,7 @@
                 <div class="messageReservation">
                     <div>
                         <label id="commentLbl" for="message">Special Accomodations / Comments</label>
-                        <textarea placeholder="Enter text here..."></textarea>
+                        <textarea id="message" placeholder="Enter text here..."></textarea>
                     </div>
 
                     <div>
@@ -145,14 +147,14 @@
     </div>
 
 
-
+    <!-- Footer -->
     <footer>
         <div id="preFooter">
             <div id="prefootMid">
 
                 <div id="map">
                     <iframe title="hotelMainMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.409032436697!2d-77.09900308425124!3d38.983160179557466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97c9d6d973d%3A0xb64f1e3725476c15!2s4810+Montgomery+Ln+%23500%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1544482533359"
-                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                        style="border:0" allowfullscreen></iframe>
                 </div>
 
                 <div id="bottomfooterinfo">
@@ -203,7 +205,6 @@
     <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
-
     <!-- My Scripts -->
     <script src="scripts/togglemenu.js"></script>
     <script src="scripts/weather.js"></script>

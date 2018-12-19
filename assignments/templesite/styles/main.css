@@ -75,12 +75,12 @@
     nav button {
         position: absolute;
         border: none;
-        background: #d1d5d810;
+        background: rgba(209,213,216,0.15);
         font-weight: bold;
     }
     nav button:focus {outline:0;}
     nav button:hover {
-        background-color: #d1d5d810;
+        background-color: rgba(209,213,216,0.15);
         color: #527500;
     }
 
@@ -221,9 +221,6 @@
     }
     .mainTempleInfoHome h3{
         margin-bottom: -0.5em;
-    }
-    .mainTempleInfoHome p{
-        padding-bottom: -0.2em; 
     }
     
     /* Amenities Section */
@@ -490,10 +487,16 @@ input::placeholder {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.2em;
+    -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
 }
 .btn:hover {
     background: rgba(92,131,1, 0.8);
     color: #FFFEFE;
+    -webkit-box-shadow: 1px 4px 8px 1px rgb(32, 32, 32);
+    -moz-box-shadow: 1px 4px 8px 1px rgb(32, 32, 32);
+    box-shadow: 1px 4px 8px 1px rgb(32, 32, 32);
 }
 .bznssInfo{
     display: flex;
@@ -537,6 +540,9 @@ input:focus:valid ~ #nameLbl:before {
 *
 ***************/
 #resourcesContainer {
+    margin: 1em auto;
+}
+#resourcesContainer li {
     margin: 1em auto;
 }
 #resourcesContainer a {
